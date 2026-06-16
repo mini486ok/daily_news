@@ -1,0 +1,20 @@
+# 원문 PDF는 용량이 크고 재배포하지 않으므로 게시 제외
+days/*/pdf/
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+
+# 임시/시스템 파일
+.DS_Store
+Thumbs.db
+*.tmp
+
+# 원래 요청문(개인 메모, 게시 불필요)
+프롬프트.txt
+
+# 인포그래픽 합성 중간 산출물(gpt-image 원본 hero)
+days/*/img/_hero_*.png
+
+# 도구/서브에이전트 임시 스크래치 파일
+_*.txt

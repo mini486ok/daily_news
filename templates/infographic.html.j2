@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #11211b; }
+  .board {
+    width: 1080px;
+    background:
+      radial-gradient(60% 40% at 18% 12%, rgba(255,255,255,.05), transparent 60%),
+      radial-gradient(50% 35% at 85% 80%, rgba(255,255,255,.04), transparent 60%),
+      radial-gradient(40% 30% at 70% 25%, rgba(255,255,255,.03), transparent 60%),
+      linear-gradient(160deg, #2c4a3e 0%, #233d33 55%, #1d342b 100%);
+    border: 16px solid #5b4636;
+    box-shadow: inset 0 0 80px rgba(0,0,0,.5);
+    padding: 46px 56px 40px;
+    color: #eef3ee;
+    font-family: "Pretendard", "Gaegu", sans-serif;
+    position: relative;
+  }
+  .chalk { text-shadow: 0 0 1px rgba(255,255,255,.45), 0 1px 0 rgba(0,0,0,.15); }
+
+  .top { display: flex; align-items: center; margin-bottom: 18px; }
+  .top .brand { font-family: "Caveat", cursive; font-size: 34px; color: #ffe08a; letter-spacing: .5px; }
+  .top .date { font-family: "Gaegu"; font-size: 22px; color: #bcd8c8; margin-left: 14px; }
+  .top .rank {
+    margin-left: auto; font-family: "Gaegu"; font-weight: 700; font-size: 30px; color: #11211b;
+    background: #ffe08a; width: 60px; height: 60px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; transform: rotate(-4deg);
+    box-shadow: 0 2px 0 rgba(0,0,0,.25);
+  }
+  .topic-chip {
+    display: inline-block; font-family: "Gaegu"; font-weight: 700; font-size: 22px;
+    background: #9fd0ff; color: #103048; padding: 2px 16px; border-radius: 999px;
+    transform: rotate(-1deg); margin-bottom: 12px;
+  }
+  .title {
+    font-family: "Gaegu", "Pretendard", sans-serif; font-weight: 700; font-size: 50px; line-height: 1.2;
+    color: #ffffff; margin: 2px 0 8px;
+  }
+  .title-underline { height: 0; border-bottom: 4px dashed rgba(255,255,255,.4); margin: 4px 0 14px; }
+  .outlet { font-family: "Gaegu"; font-size: 26px; color: #b8f0c0; }
+  .outlet b { color: #ffe08a; font-weight: 700; }
+
+  .flow { margin-top: 24px; }
+  .node {
+    border: 3px solid rgba(238,243,238,.6); border-radius: 18px;
+    padding: 22px 26px 24px; position: relative; background: rgba(255,255,255,.035);
+  }
+  .node.n1 { transform: rotate(-.5deg); border-color: rgba(255,224,138,.7); }
+  .node.n2 { transform: rotate(.4deg); border-color: rgba(159,208,255,.7); }
+  .node.n3 { transform: rotate(-.3deg); border-color: rgba(255,159,182,.75); }
+  .node.n4 { transform: rotate(.35deg); border-color: rgba(180,240,192,.78); }
+  .tag {
+    position: absolute; top: -20px; left: 26px; padding: 2px 16px; border-radius: 8px;
+    font-family: "Gaegu"; font-weight: 700; font-size: 26px; transform: rotate(-1.5deg);
+  }
+  .n1 .tag { background: #ffe08a; color: #4a3b10; }
+  .n2 .tag { background: #9fd0ff; color: #103048; }
+  .n3 .tag { background: #ff9fb6; color: #4a1020; }
+  .n4 .tag { background: #b8f0c0; color: #173a22; }
+  .node p { font-size: 27px; line-height: 1.55; color: #f1f6f1; margin-top: 6px; }
+  .arrow { text-align: center; font-family: "Gaegu"; font-size: 46px; color: #cfe6d8; line-height: 1; margin: 6px 0; }
+
+  .foot {
+    margin-top: 28px; border-top: 2px dashed rgba(255,255,255,.25); padding-top: 16px;
+    font-family: "Gaegu"; font-size: 20px; color: #9fc0ad; display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+  <div class="board">
+    <div class="top">
+      <span class="brand chalk">Daily News</span>
+      <span class="date chalk">{{ date }}</span>
+      <span class="rank">{{ rank }}</span>
+    </div>
+
+    {% if topic_label %}<span class="topic-chip chalk">{{ topic_label }}</span>{% endif %}
+    <div class="title chalk">{{ title }}</div>
+    <div class="title-underline"></div>
+    {% if outlet %}<div class="outlet chalk"><b>언론사</b> · {{ outlet }}</div>{% endif %}
+
+    <div class="flow">
+      {% if core %}
+      <div class="node n1">
+        <span class="tag chalk">핵심 내용</span>
+        <p class="chalk">{{ core }}</p>
+      </div>
+      {% endif %}
+      {% if implication %}
+      <div class="arrow chalk">↓</div>
+      <div class="node n2">
+        <span class="tag chalk">시사점</span>
+        <p class="chalk">{{ implication }}</p>
+      </div>
+      {% endif %}
+      {% if questions %}
+      <div class="arrow chalk">↓</div>
+      <div class="node n3">
+        <span class="tag chalk">더 생각해볼 문제</span>
+        <p class="chalk">{{ questions }}</p>
+      </div>
+      {% endif %}
+      {% if rnd %}
+      <div class="arrow chalk">↓</div>
+      <div class="node n4">
+        <span class="tag chalk">추진 필요한 R&D</span>
+        <p class="chalk">{{ rnd }}</p>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="foot chalk">
+      <span>Daily News · 국내 언론 기준</span>
+      <span>{% if outlet %}출처 · {{ outlet }}{% endif %}</span>
+    </div>
+  </div>
+</body>
+</html>

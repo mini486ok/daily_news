@@ -1,0 +1,165 @@
+{
+  "site": "Daily News",
+  "days": [
+    {
+      "date": "2026-06-17",
+      "count": 20,
+      "page": "days/2026-06-17/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "AI가 코스닥 판도 바꿨다…30년 만에 바이오 제친 반도체",
+              "outlet": "EBN",
+              "summary_line": "글로벌 AI 인프라 투자 확대에 힘입어 코스닥 반도체 업종 시가총액 비중이 25.2%로 치솟아 오랜 기간 시장을 주도하던 바이오 업종과 동률에 올라섰다.",
+              "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1712456"
+            },
+            {
+              "rank": 2,
+              "title": "엔비디아, 한국을 AI 인프라 생산기지로 배치…네이버·SK와 'AI 팩토리' 동맹",
+              "outlet": "K trendy NEWS",
+              "summary_line": "엔비디아가 한국을 단순 GPU 시장이 아닌 'AI 팩토리' 생산기지로 배치하며 네이버·SK하이닉스·SK텔레콤과 역할을 분담하는 협력 구도를 공개했다.",
+              "url": "https://www.k-trendynews.com/news/articleView.html?idxno=203238"
+            },
+            {
+              "rank": 3,
+              "title": "샘 올트먼 오픈AI CEO, 방한 일정 연기…삼성·카카오·네이버 회동도 순연",
+              "outlet": "서울신문",
+              "summary_line": "샘 올트먼 오픈AI CEO가 개인 사정으로 6월 14~15일 예정했던 방한 일정을 연기하면서 삼성·카카오·네이버와의 회동도 함께 순연됐다.",
+              "url": "https://www.seoul.co.kr/news/economy/2026/06/12/20260612500254"
+            },
+            {
+              "rank": 4,
+              "title": "국가 AI컴퓨팅센터, 1.5만장 반도체 기반 '소버린 인프라' 시동",
+              "outlet": "인공지능신문",
+              "summary_line": "정부가 국민성장펀드 4천억원을 출자해 전남 해남에 약 1만5천장 규모의 AI 반도체를 갖춘 국가 AI컴퓨팅센터 구축에 본격 착수했다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=39891"
+            },
+            {
+              "rank": 5,
+              "title": "EU AI법 첫 수정안 발표…규제샌드박스 1년 연기·딥페이크 성착취물 전면 금지",
+              "outlet": "전국인력신문",
+              "summary_line": "EU가 AI법 발효 후 첫 수정안을 내놓고 규제샌드박스 설립 의무를 1년 연기하는 동시에 동의 없는 성적 딥페이크 AI 시스템을 12월부터 전면 금지하기로 했다.",
+              "url": "https://www.kjob.news/news/494611"
+            },
+            {
+              "rank": 6,
+              "title": "엔비디아 차세대 GPU '루빈'에 HBM4…SK하이닉스 6월 샘플 조기 공급",
+              "outlet": "전자신문",
+              "summary_line": "SK하이닉스가 엔비디아 차세대 GPU 플랫폼 '베라 루빈'에 탑재될 HBM4 커스터머 샘플 공급을 하반기에서 6월로 앞당기며 삼성전자와 공급권 경쟁에 나섰다.",
+              "url": "https://www.etnews.com/20260317000264"
+            },
+            {
+              "rank": 7,
+              "title": "AI 수요가 부른 메모리 슈퍼사이클…D램 가격 폭등에 가전 가격 줄인상",
+              "outlet": "인더스트리뉴스",
+              "summary_line": "AI 인프라 투자로 HBM 수요가 폭발하며 일반 D램 공급이 급감해 메모리 가격이 급등하고, TV·스마트폰 등 가전 가격 인상으로 번지고 있다.",
+              "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=76763"
+            },
+            {
+              "rank": 8,
+              "title": "\"AI로 취약점 더 빨리 찾는다\"…KISA 보안 업데이트 공지 2배 급증",
+              "outlet": "ZDNet Korea",
+              "summary_line": "AI를 활용한 취약점 탐지 기술이 확산되면서 KISA 보호나라의 보안 업데이트 공지 건수가 지난해 4분기 26건에서 올해 2분기 57건으로 두 배 이상 늘었다.",
+              "url": "https://zdnet.co.kr/view/?no=20260616160058"
+            },
+            {
+              "rank": 9,
+              "title": "중기부, 대기업·공공 수요 'AI 협업과제 82개' 제시…혁신 스타트업과 매칭",
+              "outlet": "인공지능신문",
+              "summary_line": "중소벤처기업부가 대기업·공공기관의 수요과제를 혁신 스타트업과 함께 해결하는 'AI 협업과제 82개'를 제시했다.",
+              "url": "https://www.aitimes.kr/"
+            },
+            {
+              "rank": 10,
+              "title": "네이버·카카오 2026 승부수는 'AI 에이전트'…'에이전트N'·'카나나' 격돌",
+              "outlet": "테크M",
+              "summary_line": "네이버와 카카오가 2026년 핵심 승부처로 AI 에이전트를 내세워 각각 '에이전트N'과 '카나나'를 앞세운 본격 경쟁에 돌입했다.",
+              "url": "https://www.techm.kr/news/articleView.html?idxno=148224"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "GTX-A 서울역~수서, 공사 지연에 개통 6월서 8월로 미뤄져",
+              "outlet": "뉴스핌",
+              "summary_line": "수도권 광역급행철도(GTX-A) 중부 구간인 서울역~수서 구간 개통이 당초 예정된 6월 말에서 7~8월로 연기됐다.",
+              "url": "https://www.newspim.com/news/view/20260327000738"
+            },
+            {
+              "rank": 2,
+              "title": "지하철까지 8분…강북횡단선 등 6개 노선 재추진",
+              "outlet": "YTN 사이언스",
+              "summary_line": "서울시가 사업성 부족으로 중단됐던 강북횡단선·난곡선·서남선 등 6개 도시철도 노선을 다시 추진하기로 했다.",
+              "url": "https://science.ytn.co.kr/program/view.php?mcd=0082&key=202606121107018504"
+            },
+            {
+              "rank": 3,
+              "title": "늘어나는 무임승차에 서울지하철 적자 심화",
+              "outlet": "한국경제",
+              "summary_line": "서울교통공사의 지난해 지하철 1~8호선 무임수송 손실이 4488억원으로 5년 새 약 70% 증가했다.",
+              "url": "https://www.hankyung.com/article/2026061237431"
+            },
+            {
+              "rank": 4,
+              "title": "남광토건, 강동하남남양주선 광역철도 6공구 건설공사 실시설계적격자 선정",
+              "outlet": "디지털투데이",
+              "summary_line": "남광토건이 총 공사금액 약 7684억 원 규모의 강동하남남양주선 광역철도 6공구 건설공사 실시설계적격자로 선정됐다.",
+              "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=675654"
+            },
+            {
+              "rank": 5,
+              "title": "코레일·SR 통합하면 기차값 얼마?…학계 \"요금 인하 적절치 않아\"",
+              "outlet": "뉴스핌",
+              "summary_line": "한국행정학회·대한교통학회 세미나에서 학계는 코레일·SR 통합의 효율성을 인정하면서도 KTX 요금 인하에는 반대 입장을 밝혔다.",
+              "url": "https://www.newspim.com/news/view/20260423000230"
+            },
+            {
+              "rank": 6,
+              "title": "수도권 동남부 광역교통 간담회 '제5차 광역교통시행계획('26~'30)' 수립 논의",
+              "outlet": "국토교통부(정책브리핑)",
+              "summary_line": "국토교통부 대도시권광역교통위원회가 수도권 동남부 23개 지자체와 GTX 환승센터·광역철도 등을 논의하는 제5차 광역교통시행계획 수립 간담회를 열었다.",
+              "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156693191"
+            },
+            {
+              "rank": 7,
+              "title": "강릉·부전 잇는 KTX-이음, 동해선 개통 초기부터 '매진' 기록",
+              "outlet": "한국철도일보",
+              "summary_line": "동해선 KTX-이음이 강릉~부전 구간 운행을 시작하며 이동시간을 5시간에서 3시간 50분대로 단축하고 개통 초기부터 매진을 기록했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=97777"
+            },
+            {
+              "rank": 8,
+              "title": "수서역에서 KTX, 서울역에서 SRT…11일부터 교차운행 예매",
+              "outlet": "국토교통부(정책브리핑)",
+              "summary_line": "고속철도 통합의 첫 단계로 수서역 출발 KTX와 서울역 출발 SRT의 교차운행 시범사업 예매가 2월 11일부터 시작됐다.",
+              "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148959358"
+            },
+            {
+              "rank": 9,
+              "title": "기후동행카드 3만원 환급 신청 시작…'티머니 카드&페이' 가입 필수",
+              "outlet": "뉴스웨이",
+              "summary_line": "서울시가 고유가 대책으로 기후동행카드 30일권 이용자에게 월 3만원, 최대 9만원을 환급하는 신청을 6월 10일 시작했다.",
+              "url": "https://www.newsway.co.kr/news/view?ud=2026061014014337516"
+            },
+            {
+              "rank": 10,
+              "title": "대중교통 6만2천원 넘으면 환급…'모두의 카드' 도입",
+              "outlet": "여성신문",
+              "summary_line": "2026년부터 월 6만2천원을 초과해 쓴 대중교통비를 전액 환급하는 'K-패스 모두의 카드'가 도입됐다.",
+              "url": "https://www.womennews.co.kr/news/articleView.html?idxno=271462"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "updated_at": "2026-06-16T21:20:51.204670+00:00"
+}

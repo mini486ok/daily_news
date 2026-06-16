@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ date }} · Daily News 브리핑</title>
+  <meta name="description" content="{{ date }} 국내 언론 기준 AI·철도/대중교통 주요 뉴스 한글 요약" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../">
+        <span class="logo">N</span>
+        <span>Daily News<small>국내 뉴스 요약 브리핑</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" title="라이트/다크 모드 전환" aria-label="테마 전환">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="day-hero">
+    <div class="wrap">
+      <a class="back" href="../../">← 전체 아카이브</a>
+      <h1>{{ date }} 뉴스 브리핑</h1>
+      <p>국내 언론 기준, 주제별 주요 기사를 한글로 요약했습니다.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+      {% for t in topics %}
+      <section class="topic-section" id="topic-{{ t.key }}">
+        <div class="topic-head"><span class="topic-badge t-{{ t.key }}">{{ t.label }}</span><span class="count">{{ t.articles|length }}건</span></div>
+
+        {% for a in t.articles %}
+        <article class="paper" id="article-{{ t.key }}-{{ a.rank }}">
+          <div class="prank">{{ t.label }} · #{{ a.rank }}</div>
+          <h3>{{ a.title }}</h3>
+          {% if a.infographic.image_path %}
+          <figure class="paper-figure">
+            <img loading="lazy" src="{{ a.infographic.image_path }}" alt="{{ a.title }} 인포그래픽" />
+          </figure>
+          {% endif %}
+          <div class="meta"><span class="org">📰 {{ a.outlet or "언론사 미상" }}</span></div>
+
+          {% if a.summary.core %}
+          <div class="sec"><h4>핵심 내용</h4><p>{{ a.summary.core }}</p></div>
+          {% endif %}
+          {% if a.summary.implication %}
+          <div class="sec"><h4>시사점</h4><p>{{ a.summary.implication }}</p></div>
+          {% endif %}
+          {% if a.summary.questions %}
+          <div class="sec"><h4>더 생각해볼 문제</h4><p>{{ a.summary.questions }}</p></div>
+          {% endif %}
+          {% if a.summary.rnd %}
+          <div class="sec"><h4>추진 필요한 연구개발 주제</h4><p>{{ a.summary.rnd }}</p></div>
+          {% endif %}
+
+          <div class="links">
+            {% if a.url %}<a class="btn primary" href="{{ a.url }}" target="_blank" rel="noopener">기사 원문 보기</a>{% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </section>
+      {% endfor %}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      국내 언론 기사 기반 요약 · 원문 저작권은 각 언론사에 있습니다.
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

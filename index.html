@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily News — 국내 뉴스 요약 브리핑</title>
+  <meta name="description" content="국내 언론 기준 AI(인공지능)·철도/대중교통 주요 뉴스를 매일 한글로 요약하고 칠판 인포그래픽으로 정리한 아카이브" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./">
+        <span class="logo">N</span>
+        <span>Daily News<small>국내 뉴스 요약 브리핑</small></span>
+      </a>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" title="라이트/다크 모드 전환" aria-label="테마 전환">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>오늘의 뉴스를 <span class="grad">한 장으로</span>.</h1>
+      <p>
+        국내 언론 기준으로 <strong>AI(인공지능)</strong>와 <strong>철도·대중교통</strong> 분야의 주요 기사를 매일 선별해
+        한글로 요약하고, 핵심 내용을 칠판형 인포그래픽으로 정리합니다.
+      </p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <div class="controls">
+    <div class="wrap">
+      <div class="ctl-top">
+        <label class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></svg>
+          <input id="search" type="search" placeholder="제목 · 언론사 · 키워드 검색" />
+        </label>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">주제</span>
+        <div class="chips" id="topicChips"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">날짜</span>
+        <div class="chips datechips" id="dateChips"></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap">
+      <div id="app"><div class="empty">불러오는 중…</div></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      국내 언론 기사 기반 요약 · 원문 저작권은 각 언론사에 있습니다.<br />
+      매일 자동 생성되는 뉴스 요약 아카이브
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
