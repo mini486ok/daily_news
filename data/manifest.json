@@ -3,7 +3,7 @@
   "days": [
     {
       "date": "2026-06-16",
-      "count": 20,
+      "count": 18,
       "page": "days/2026-06-16/index.html",
       "topics": [
         {
@@ -12,73 +12,73 @@
           "articles": [
             {
               "rank": 1,
-              "title": "AI가 코스닥 판도 바꿨다…30년 만에 바이오 제친 반도체",
-              "outlet": "EBN",
-              "summary_line": "글로벌 AI 인프라 투자 확대에 힘입어 코스닥 반도체 업종 시가총액 비중이 25.2%로 치솟아 오랜 기간 시장을 주도하던 바이오 업종과 동률에 올라섰다.",
-              "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1712456"
+              "title": "회장이 직접 코딩까지…롯데, AI로 일하는 방식 확 바꾼다",
+              "outlet": "한국경제",
+              "summary_line": "롯데그룹이 신동빈 회장 주도로 전사적 인공지능 전환(AX)을 그룹 생존이 걸린 최우선 과제로 선언하고 전 임직원 AI 에이전트 교육에 나섰다.",
+              "url": "https://www.hankyung.com/article/202606168859i"
             },
             {
               "rank": 2,
-              "title": "엔비디아, 한국을 AI 인프라 생산기지로 배치…네이버·SK와 'AI 팩토리' 동맹",
-              "outlet": "K trendy NEWS",
-              "summary_line": "엔비디아가 한국을 단순 GPU 시장이 아닌 'AI 팩토리' 생산기지로 배치하며 네이버·SK하이닉스·SK텔레콤과 역할을 분담하는 협력 구도를 공개했다.",
-              "url": "https://www.k-trendynews.com/news/articleView.html?idxno=203238"
+              "title": "SKT, AI 에이전트에 '26사번' 부여...전사 'AX 혁신 2.0' 본격 가동",
+              "outlet": "AI타임스",
+              "summary_line": "SK텔레콤이 AI 에이전트에 사번을 부여하고 조직·직무·권한을 할당하는 'AX 혁신 2.0'을 본격 가동한다고 밝혔다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211779"
             },
             {
               "rank": 3,
-              "title": "샘 올트먼 오픈AI CEO, 방한 일정 연기…삼성·카카오·네이버 회동도 순연",
-              "outlet": "서울신문",
-              "summary_line": "샘 올트먼 오픈AI CEO가 개인 사정으로 6월 14~15일 예정했던 방한 일정을 연기하면서 삼성·카카오·네이버와의 회동도 함께 순연됐다.",
-              "url": "https://www.seoul.co.kr/news/economy/2026/06/12/20260612500254"
+              "title": "KT, 한국 문화 반영한 'AI 안전성 벤치마크' 공개",
+              "outlet": "AI타임스",
+              "summary_line": "KT와 고려대가 국내 문화 맥락을 반영한 한국어 멀티모달 안전성 평가 벤치마크 'KSAFE-MM'을 공개했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211783"
             },
             {
               "rank": 4,
-              "title": "국가 AI컴퓨팅센터, 1.5만장 반도체 기반 '소버린 인프라' 시동",
-              "outlet": "인공지능신문",
-              "summary_line": "정부가 국민성장펀드 4천억원을 출자해 전남 해남에 약 1만5천장 규모의 AI 반도체를 갖춘 국가 AI컴퓨팅센터 구축에 본격 착수했다.",
-              "url": "https://www.aitimes.kr/news/articleView.html?idxno=39891"
+              "title": "엘리스그룹, 국가 AI데이터센터 GPU 클라우드 공급사 선정",
+              "outlet": "AI타임스",
+              "summary_line": "엘리스그룹이 광주 AI산업융합사업단의 2026년 국가 AI데이터센터 고도화 사업 GPU 클라우드 공급사로 선정됐다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211775"
             },
             {
               "rank": 5,
-              "title": "EU AI법 첫 수정안 발표…규제샌드박스 1년 연기·딥페이크 성착취물 전면 금지",
-              "outlet": "전국인력신문",
-              "summary_line": "EU가 AI법 발효 후 첫 수정안을 내놓고 규제샌드박스 설립 의무를 1년 연기하는 동시에 동의 없는 성적 딥페이크 AI 시스템을 12월부터 전면 금지하기로 했다.",
-              "url": "https://www.kjob.news/news/494611"
+              "title": "업스테이지 \"모델 넘어 서비스로\"...'다음' 안고 에이전트 진화",
+              "outlet": "AI타임스",
+              "summary_line": "업스테이지가 자체 모델 '솔라'를 중심으로 기업·개인·에이전트를 아우르는 서비스 확장을 선언하고 포털 '다음'을 AI 검색 에이전트로 진화시킨다고 밝혔다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211795"
             },
             {
               "rank": 6,
-              "title": "엔비디아 차세대 GPU '루빈'에 HBM4…SK하이닉스 6월 샘플 조기 공급",
-              "outlet": "전자신문",
-              "summary_line": "SK하이닉스가 엔비디아 차세대 GPU 플랫폼 '베라 루빈'에 탑재될 HBM4 커스터머 샘플 공급을 하반기에서 6월로 앞당기며 삼성전자와 공급권 경쟁에 나섰다.",
-              "url": "https://www.etnews.com/20260317000264"
+              "title": "카카오, 카톡 채팅방서 '챗GPT' 바로 호출 기능 업데이트",
+              "outlet": "AI타임스",
+              "summary_line": "카카오가 카카오톡 채팅방에서 멘션이나 버튼으로 챗GPT를 바로 호출해 실시간 답변과 이미지 생성을 받을 수 있는 기능을 출시했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211791"
             },
             {
               "rank": 7,
-              "title": "AI 수요가 부른 메모리 슈퍼사이클…D램 가격 폭등에 가전 가격 줄인상",
-              "outlet": "인더스트리뉴스",
-              "summary_line": "AI 인프라 투자로 HBM 수요가 폭발하며 일반 D램 공급이 급감해 메모리 가격이 급등하고, TV·스마트폰 등 가전 가격 인상으로 번지고 있다.",
-              "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=76763"
+              "title": "마키나락스, 덴소코리아 자동차 부품 시험 공정 AI로 자동화",
+              "outlet": "AI타임스",
+              "summary_line": "마키나락스가 덴소코리아의 차량용 전장 부품 시험 공정에 비전 AI 기반 이상 감지 기술을 적용해 자동화했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211773"
             },
             {
               "rank": 8,
-              "title": "\"AI로 취약점 더 빨리 찾는다\"…KISA 보안 업데이트 공지 2배 급증",
-              "outlet": "ZDNet Korea",
-              "summary_line": "AI를 활용한 취약점 탐지 기술이 확산되면서 KISA 보호나라의 보안 업데이트 공지 건수가 지난해 4분기 26건에서 올해 2분기 57건으로 두 배 이상 늘었다.",
-              "url": "https://zdnet.co.kr/view/?no=20260616160058"
+              "title": "서울 AI 허브, AI 스타트업 100개사에 GPU 서버 이용 지원",
+              "outlet": "AI타임스",
+              "summary_line": "서울 AI 허브가 올해 20억 원을 투입해 AI 스타트업 100개사에 H100·B200 등 GPU 클라우드 이용을 지원한다고 밝혔다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211780"
             },
             {
               "rank": 9,
-              "title": "중기부, 대기업·공공 수요 'AI 협업과제 82개' 제시…혁신 스타트업과 매칭",
-              "outlet": "인공지능신문",
-              "summary_line": "중소벤처기업부가 대기업·공공기관의 수요과제를 혁신 스타트업과 함께 해결하는 'AI 협업과제 82개'를 제시했다.",
-              "url": "https://www.aitimes.kr/"
+              "title": "AI 시대, 비즈니스 혁신 전략 논한다…CIS 2026 17일 개최",
+              "outlet": "ZDNet Korea",
+              "summary_line": "지디넷코리아가 17일 '통합 운영, 측정 가능한 성장'을 주제로 AI 비즈니스 혁신 전략을 논하는 컨버전스 인사이트 서밋(CIS) 2026을 개최한다고 밝혔다.",
+              "url": "https://zdnet.co.kr/view/?no=20260616163230"
             },
             {
               "rank": 10,
-              "title": "네이버·카카오 2026 승부수는 'AI 에이전트'…'에이전트N'·'카나나' 격돌",
-              "outlet": "테크M",
-              "summary_line": "네이버와 카카오가 2026년 핵심 승부처로 AI 에이전트를 내세워 각각 '에이전트N'과 '카나나'를 앞세운 본격 경쟁에 돌입했다.",
-              "url": "https://www.techm.kr/news/articleView.html?idxno=148224"
+              "title": "엔비디아, AI '추론' 시장서도 점유율 확대...1년 간 66%→74% 성장",
+              "outlet": "AI타임스",
+              "summary_line": "엔비디아의 AI 추론용 칩 시장 점유율이 지난 1년간 66%에서 74%로 확대되며 학습에 이어 추론 시장에서도 지배력을 강화한 것으로 나타났다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211788"
             }
           ]
         },
@@ -88,78 +88,64 @@
           "articles": [
             {
               "rank": 1,
-              "title": "GTX-A 서울역~수서, 공사 지연에 개통 6월서 8월로 미뤄져",
-              "outlet": "뉴스핌",
-              "summary_line": "수도권 광역급행철도(GTX-A) 중부 구간인 서울역~수서 구간 개통이 당초 예정된 6월 말에서 7~8월로 연기됐다.",
-              "url": "https://www.newspim.com/news/view/20260327000738"
+              "title": "코레일, 철도역 노숙인 110명 자립 지원…전국 13개 역 일자리 제공",
+              "outlet": "이데일리",
+              "summary_line": "코레일이 전국 13개 철도역에서 노숙인 110명에게 6개월간 일자리를 제공하는 2026년도 노숙인 일자리 협력사업을 추진한다고 밝혔다.",
+              "url": "https://www.edaily.co.kr/News/Read?newsId=03453846645482376&mediaCodeNo=257"
             },
             {
               "rank": 2,
-              "title": "지하철까지 8분…강북횡단선 등 6개 노선 재추진",
-              "outlet": "YTN 사이언스",
-              "summary_line": "서울시가 사업성 부족으로 중단됐던 강북횡단선·난곡선·서남선 등 6개 도시철도 노선을 다시 추진하기로 했다.",
-              "url": "https://science.ytn.co.kr/program/view.php?mcd=0082&key=202606121107018504"
+              "title": "지하철 6호선 안암역서 이산화탄소 유출…열차 한때 양방향 무정차 통과",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "16일 오전 서울 지하철 6호선 안암역 변전소에서 소방점검 중 이산화탄소가 유출돼 승객이 대피하고 한때 열차가 양방향 무정차 통과했으나 인명피해는 없었다.",
+              "url": "https://www.fnnews.com/news/202606161059146569"
             },
             {
               "rank": 3,
-              "title": "늘어나는 무임승차에 서울지하철 적자 심화",
-              "outlet": "한국경제",
-              "summary_line": "서울교통공사의 지난해 지하철 1~8호선 무임수송 손실이 4488억원으로 5년 새 약 70% 증가했다.",
-              "url": "https://www.hankyung.com/article/2026061237431"
+              "title": "수도권 전철, 15분 내 재승차 시 기본운임 면제…20일부터 코레일 구간 확대",
+              "outlet": "국토교통뉴스",
+              "summary_line": "코레일은 화장실 이용 등으로 개찰구를 나간 뒤 15분 이내 같은 역·노선에서 재승차하면 기본운임 1550원을 면제하는 제도를 20일부터 수도권 전철 코레일 구간에 확대 시행한다고 밝혔다.",
+              "url": "https://www.guktonews.co.kr/6462"
             },
             {
               "rank": 4,
-              "title": "남광토건, 강동하남남양주선 광역철도 6공구 건설공사 실시설계적격자 선정",
-              "outlet": "디지털투데이",
-              "summary_line": "남광토건이 총 공사금액 약 7684억 원 규모의 강동하남남양주선 광역철도 6공구 건설공사 실시설계적격자로 선정됐다.",
-              "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=675654"
+              "title": "코레일, 7월부터 전동킥보드·대용량 리튬배터리 열차 반입 금지",
+              "outlet": "폴리뉴스",
+              "summary_line": "코레일은 화재 위험을 줄이기 위해 7월 1일부터 전동킥보드 등 개인형 이동장치와 160Wh 초과 대용량 리튬배터리의 열차 반입을 전면 제한한다고 밝혔다.",
+              "url": "https://www.polinews.co.kr/news/articleView.html?idxno=734208"
             },
             {
               "rank": 5,
-              "title": "코레일·SR 통합하면 기차값 얼마?…학계 \"요금 인하 적절치 않아\"",
-              "outlet": "뉴스핌",
-              "summary_line": "한국행정학회·대한교통학회 세미나에서 학계는 코레일·SR 통합의 효율성을 인정하면서도 KTX 요금 인하에는 반대 입장을 밝혔다.",
-              "url": "https://www.newspim.com/news/view/20260423000230"
+              "title": "남광토건, 강동하남남양주선 광역철도 6공구 실시설계적격자 선정",
+              "outlet": "디지털투데이",
+              "summary_line": "남광토건이 공사예정금액 4044억여원 규모의 강동하남남양주선 광역철도 6공구 건설공사 실시설계적격자로 선정됐다고 16일 공시됐다.",
+              "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=675654"
             },
             {
               "rank": 6,
-              "title": "수도권 동남부 광역교통 간담회 '제5차 광역교통시행계획('26~'30)' 수립 논의",
-              "outlet": "국토교통부(정책브리핑)",
-              "summary_line": "국토교통부 대도시권광역교통위원회가 수도권 동남부 23개 지자체와 GTX 환승센터·광역철도 등을 논의하는 제5차 광역교통시행계획 수립 간담회를 열었다.",
-              "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156693191"
+              "title": "14년 주민 숙원 '관악12번 마을버스' 신설 결실…11월 운행 개시",
+              "outlet": "국토교통뉴스",
+              "summary_line": "고지대 주거지의 14년 숙원이던 관악12번 마을버스가 최종 승인돼 오는 11월 30일부터 관악파크푸르지오와 서원역을 잇는 9.5km 구간을 운행한다.",
+              "url": "https://www.guktonews.co.kr/6485"
             },
             {
               "rank": 7,
-              "title": "강릉·부전 잇는 KTX-이음, 동해선 개통 초기부터 '매진' 기록",
-              "outlet": "한국철도일보",
-              "summary_line": "동해선 KTX-이음이 강릉~부전 구간 운행을 시작하며 이동시간을 5시간에서 3시간 50분대로 단축하고 개통 초기부터 매진을 기록했다.",
-              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=97777"
+              "title": "\"3대 중 1대 낡았다\"…서울 지하철 승강기, 안전 '빨간불'",
+              "outlet": "철도경제신문",
+              "summary_line": "서울 지하철 1~8호선 에스컬레이터 1878대 중 34%가 내구연한을 넘겼지만 교체 발주는 급감해 노후 승강기 안전에 빨간불이 켜졌다고 보도했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16722"
             },
             {
               "rank": 8,
-              "title": "수서역에서 KTX, 서울역에서 SRT…11일부터 교차운행 예매",
-              "outlet": "국토교통부(정책브리핑)",
-              "summary_line": "고속철도 통합의 첫 단계로 수서역 출발 KTX와 서울역 출발 SRT의 교차운행 시범사업 예매가 2월 11일부터 시작됐다.",
-              "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148959358"
-            },
-            {
-              "rank": 9,
-              "title": "기후동행카드 3만원 환급 신청 시작…'티머니 카드&페이' 가입 필수",
-              "outlet": "뉴스웨이",
-              "summary_line": "서울시가 고유가 대책으로 기후동행카드 30일권 이용자에게 월 3만원, 최대 9만원을 환급하는 신청을 6월 10일 시작했다.",
-              "url": "https://www.newsway.co.kr/news/view?ud=2026061014014337516"
-            },
-            {
-              "rank": 10,
-              "title": "대중교통 6만2천원 넘으면 환급…'모두의 카드' 도입",
-              "outlet": "여성신문",
-              "summary_line": "2026년부터 월 6만2천원을 초과해 쓴 대중교통비를 전액 환급하는 'K-패스 모두의 카드'가 도입됐다.",
-              "url": "https://www.womennews.co.kr/news/articleView.html?idxno=271462"
+              "title": "코레일, 옛 서울역에서 '철도문화전' 개최…'다시 뛰는 심장' 주제",
+              "outlet": "국토교통뉴스",
+              "summary_line": "코레일이 옛 서울역(문화역서울284)에서 '서울역 2026: 다시 뛰는 심장'을 주제로 8월 17일까지 철도문화전을 열어 철도 유물과 미래 모빌리티 기술을 선보인다고 밝혔다.",
+              "url": "https://www.guktonews.co.kr/6510"
             }
           ]
         }
       ]
     }
   ],
-  "updated_at": "2026-06-16T21:29:58.578777+00:00"
+  "updated_at": "2026-06-16T21:48:02.649673+00:00"
 }

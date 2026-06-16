@@ -45,6 +45,13 @@ def cmd_build(args):
         log(f"{aj} 없음. 먼저 기사 수집·요약(articles.json)을 완료하세요."); sys.exit(1)
     data = json.loads(aj.read_text(encoding="utf-8"))
 
+    # 게재일 검증: 기준일과 다른 기사 경고(전날·다음날·미상 기사 혼입 방지)
+    off = [(t["key"], a.get("rank"), a.get("published"))
+           for t in data.get("topics", []) for a in t.get("articles", [])
+           if (a.get("published") or "") != date]
+    if off:
+        log(f"[주의] 게재일이 {date} 가 아닌(또는 미상) 기사 {len(off)}건: {off[:12]}")
+
     # 인포그래픽 경로 주입(<key>-<rank>.png)
     for t in data.get("topics", []):
         for a in t.get("articles", []):
