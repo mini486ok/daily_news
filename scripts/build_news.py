@@ -96,6 +96,15 @@ def cmd_build(args):
     log(f"manifest.json 갱신 완료 ({len(manifest['days'])}일치, {count}건)")
 
 
+def cmd_date(args):
+    """게시·검색 기준 날짜를 출력. 인자가 있으면 그대로, 없으면 어제(오늘 KST-1일)."""
+    if args.date:
+        print(args.date)
+    else:
+        kst = dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=9)
+        print((kst - dt.timedelta(days=1)).strftime("%Y-%m-%d"))
+
+
 def run(cmd):
     import subprocess
     log("$ " + " ".join(cmd))
@@ -116,6 +125,7 @@ def main():
     sub = ap.add_subparsers(dest="command", required=True)
     b = sub.add_parser("build"); b.add_argument("date"); b.set_defaults(func=cmd_build)
     d = sub.add_parser("deploy"); d.add_argument("date", nargs="?"); d.set_defaults(func=cmd_deploy)
+    dp = sub.add_parser("date"); dp.add_argument("date", nargs="?"); dp.set_defaults(func=cmd_date)
     args = ap.parse_args()
     args.func(args)
 

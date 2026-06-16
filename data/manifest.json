@@ -2,9 +2,9 @@
   "site": "Daily News",
   "days": [
     {
-      "date": "2026-06-17",
+      "date": "2026-06-16",
       "count": 20,
-      "page": "days/2026-06-17/index.html",
+      "page": "days/2026-06-16/index.html",
       "topics": [
         {
           "key": "ai",
@@ -161,5 +161,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-16T21:20:51.204670+00:00"
+  "updated_at": "2026-06-16T21:29:58.578777+00:00"
 }
