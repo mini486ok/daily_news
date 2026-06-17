@@ -233,6 +233,38 @@ main { padding: 28px 0 80px; }
 .btn:hover { border-color: var(--accent); transform: translateY(-2px); }
 .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
 
+/* ---------- 날짜 접이식(메인 '전체' 보기) ---------- */
+.day-section.collapsible > .day-head {
+  cursor: pointer; user-select: none;
+  padding: 10px 14px; margin: 8px 0 14px; border-radius: 12px;
+  border: 1px solid transparent; transition: background .15s ease, border-color .15s ease;
+}
+.day-section.collapsible > .day-head:hover { background: var(--bg-elev); border-color: var(--border); }
+.day-head .toggle { flex: none; width: 16px; color: var(--text-mute); font-size: .9rem; font-weight: 800;
+  transition: transform .18s ease; }
+.day-section.collapsed > .day-head .toggle { transform: rotate(-90deg); }
+.day-section.collapsed > .day-body { display: none; }
+.day-section.collapsible.collapsed { margin-bottom: 14px; }
+
+/* ---------- 플로팅 네비(FAB) ---------- */
+.fabnav {
+  position: fixed; right: 22px; bottom: 22px; z-index: 60;
+  display: flex; flex-direction: column; gap: 10px;
+  opacity: 0; transform: translateY(10px); pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.fabnav.show { opacity: 1; transform: none; pointer-events: auto; }
+.fab {
+  width: 48px; height: 48px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer; text-decoration: none;
+  border: 1px solid var(--border); background: var(--bg-elev); color: var(--text);
+  font-size: 1.25rem; font-weight: 800; box-shadow: var(--shadow-lg);
+  transition: transform .15s ease, border-color .15s ease, color .15s ease;
+}
+.fab:hover { transform: translateY(-3px); border-color: var(--accent); color: var(--accent); }
+.fab-home { background: var(--accent); color: #fff; border-color: var(--accent); }
+.fab-home:hover { color: #fff; filter: brightness(1.08); }
+
 /* ---------- 푸터 ---------- */
 .site-footer { border-top: 1px solid var(--border); padding: 32px 0; color: var(--text-mute);
   font-size: .85rem; text-align: center; }
@@ -261,6 +293,8 @@ main { padding: 28px 0 80px; }
   .paper-figure { padding: 12px; margin-bottom: 16px; }
   .paper h3 { font-size: 1.2rem; }
   .day-hero { padding: 32px 0 6px; }
+  .fabnav { right: 14px; bottom: 14px; gap: 8px; }
+  .fab { width: 46px; height: 46px; font-size: 1.18rem; }
 }
 @media (max-width: 480px) {
   .grid { grid-template-columns: 1fr; }
