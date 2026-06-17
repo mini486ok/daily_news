@@ -2,6 +2,165 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-17",
+      "count": 20,
+      "page": "days/2026-06-17/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "NYT \"AI 열풍에 뜨는 한국·대만 반도체…중국은 밀려난다\"",
+              "outlet": "뉴욕타임스(국내 보도)",
+              "summary_line": "AI 붐으로 메모리 수요가 폭발하며 SK하이닉스·삼성전자 등 한국·대만이 시장 패권을 쥐고 중국은 첨단 메모리에서 존재감을 잃고 있다는 진단이 나왔다.",
+              "url": "https://knewsla.com/econ-money/20260616120120344053/"
+            },
+            {
+              "rank": 2,
+              "title": "구글, AI 보안 플랫폼 한국 출시…\"데이터 주권 보장\"",
+              "outlet": "전자신문",
+              "summary_line": "구글 클라우드가 제미나이를 탑재한 AI 기반 보안 운영 플랫폼(Google SecOps)을 서울 리전에 정식 출시해 국내 기업이 데이터를 국내에 두고 위협 대응을 자동화할 수 있게 됐다.",
+              "url": "https://www.etnews.com/20260617000304"
+            },
+            {
+              "rank": 3,
+              "title": "'원LG'로 미래 산업 공략…LG전자, 피지컬 AI·액체냉각 전면 부상",
+              "outlet": "디지털데일리",
+              "summary_line": "LG전자가 엔비디아와 협력해 가전을 넘어 로봇 액추에이터·AI 데이터센터 액체냉각 등 피지컬 AI와 AI 인프라 사업으로 'One LG' 통합 전략을 본격화했다.",
+              "url": "https://www.ddaily.co.kr/page/view/2026061714033865838"
+            },
+            {
+              "rank": 4,
+              "title": "CJ온스타일, '클로드 엔터프라이즈' 전사 도입…AI 내재화 속도",
+              "outlet": "이투데이",
+              "summary_line": "CJ온스타일이 앤트로픽의 기업용 생성형 AI '클로드 엔터프라이즈'를 전사 공식 플랫폼으로 도입하며 AI를 기업 운영 전반을 혁신하는 핵심 인프라로 내재화한다.",
+              "url": "https://www.etoday.co.kr/news/view/2594538"
+            },
+            {
+              "rank": 5,
+              "title": "DGIST, 휴머노이드 '군집 지능' 개발 나선다…5년간 약 80억 투입",
+              "outlet": "머니투데이",
+              "summary_line": "DGIST가 과기정통부 'AI 휴머노이드' 신규 과제에 선정돼 2030년까지 77억5000만원을 지원받아 여러 로봇이 경험을 공유하고 스스로 협업하는 군집 지능 기술을 개발한다.",
+              "url": "https://www.mt.co.kr/future/2026/06/17/2026061712485479758"
+            },
+            {
+              "rank": 6,
+              "title": "[테크데이] 대덕전자 \"AI 반도체 기판, 대형화·고속화·고전력 대응으로 재편\"",
+              "outlet": "전자신문",
+              "summary_line": "대덕전자가 AI 반도체 시대에 맞춰 패키지 기판 기술이 대형화·고속화·고전력화로 재편되고 있다며 2028년까지 30층·대형 FC-BGA 기판과 3600W급 고전력 대응 기술을 추진한다고 밝혔다.",
+              "url": "https://www.etnews.com/20260617000198"
+            },
+            {
+              "rank": 7,
+              "title": "은행권 대세 됐는데…AI는 어떻게 감독하나",
+              "outlet": "머니투데이방송(MTN)",
+              "summary_line": "은행권이 신용평가·대출심사·고객상담 등 핵심 업무에 에이전트 AI를 전면 도입하는 가운데, AI 의사결정을 검증·감독할 체계가 미비하다는 우려가 제기됐다.",
+              "url": "https://news.mtn.co.kr/news-detail/2026061614330789927"
+            },
+            {
+              "rank": 8,
+              "title": "KT그룹 희망나눔재단, '2026 K-AI 콘텐츠 공모전' 개최",
+              "outlet": "뉴스핌",
+              "summary_line": "KT그룹 희망나눔재단이 과기정통부 '전국민 AI 경진대회'와 연계해 책임 있는 AI 활용 문화를 확산하는 'K-AI 콘텐츠 공모전'을 열고 참가자에게 AI 윤리 실천 서약을 받는다.",
+              "url": "https://www.newspim.com/news/view/20260617000865"
+            },
+            {
+              "rank": 9,
+              "title": "[CESS 2026] 물, 공급 넘어 자원화로…AI 시대 전략자원으로 부상",
+              "outlet": "이투데이",
+              "summary_line": "반도체·데이터센터의 물 수요가 급증하면서 물이 AI 시대의 전략자원으로 부상해 초순수 국산화·하수처리수 재이용 등 자원화 방안이 핵심 과제로 떠올랐다.",
+              "url": "https://www.etoday.co.kr/news/view/2594534"
+            },
+            {
+              "rank": 10,
+              "title": "더핑크퐁컴퍼니, AI 인터랙티브 전시 '아기상어 비밀초대장' 개막",
+              "outlet": "이투데이",
+              "summary_line": "더핑크퐁컴퍼니가 LLM·음성 인식/합성·컴퓨터 비전 등 복합 AI 기술을 결합해 관람객이 직접 상어가 되어 상호작용하는 참여형 AI 인터랙티브 전시를 DDP에서 개막했다.",
+              "url": "https://www.etoday.co.kr/news/view/2594544"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "서울시, 기후동행카드 전면 개편…K-패스와 통합 운영한다",
+              "outlet": "한국철도일보",
+              "summary_line": "서울시가 기후동행카드와 정부 K-패스를 묶은 '기후동행카드 플러스'를 도입해 월 6만2천원 기준 환급형·무제한 방식을 자동 적용한다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=156999"
+            },
+            {
+              "rank": 2,
+              "title": "\"KTX는 대동맥, 광역鐵은 실핏줄\"…철도가 지방소멸위기 해법 [국회 토론회]",
+              "outlet": "철도경제신문",
+              "summary_line": "국회 토론회에서 KTX를 대동맥, 광역철도를 실핏줄로 삼는 권역별 철도망 확충이 지방소멸 대응의 핵심 해법으로 제시됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16870"
+            },
+            {
+              "rank": 3,
+              "title": "GTX-A 철근 누락, 소장 1명이 2개 공구 맡았는데…\"관리 공백 없었나\"",
+              "outlet": "철도경제신문",
+              "summary_line": "GTX-A 삼성역 공사에서 현장소장 1명이 2개 공구를 겸임한 사실이 드러나며 철근 누락 사고의 관리 공백 의혹이 제기됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16857"
+            },
+            {
+              "rank": 4,
+              "title": "경쟁 끝낸 코레일·SR, '독점의 늪' 피할까 [철도이야기]",
+              "outlet": "철도경제신문",
+              "summary_line": "9월 1일 코레일·SR 통합을 앞두고 좌석 확대 등 기대와 함께 고속철도 독점화에 대한 견제 장치 필요성이 제기됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16865"
+            },
+            {
+              "rank": 5,
+              "title": "코레일, '철도차량 상태기반 유지보수' 데이터 분석센터 구축",
+              "outlet": "철도경제신문",
+              "summary_line": "코레일이 차량 정비단 3곳에 CBM 데이터 분석센터를 열어 AI로 고장을 예측하는 예방정비 체계로 전환한다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16876"
+            },
+            {
+              "rank": 6,
+              "title": "낡은 KTX 언제까지…5극3특 잇는 철도투자 늘려야 [노후 KTX-1 교체]",
+              "outlet": "철도경제신문",
+              "summary_line": "노후 KTX-1 교체와 차세대 KTX 도입을 '사회적 자본 재투자' 관점에서 확대해야 한다는 주장이 제기됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16872"
+            },
+            {
+              "rank": 7,
+              "title": "자율주행·AI시티 총출동…'2026 국토교통기술대전' 오는 24일 개막",
+              "outlet": "한국철도일보",
+              "summary_line": "국토부가 6월 24~26일 코엑스에서 자율주행·AI시티 등 미래 교통기술을 선보이는 '2026 국토교통기술대전'을 연다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=156961"
+            },
+            {
+              "rank": 8,
+              "title": "광주교통공사, 품질·안전보건경영시스템 인증 유지 성공",
+              "outlet": "한국철도일보",
+              "summary_line": "광주교통공사가 ISO 9001·ISO 45001 사후심사에서 적합 판정을 받아 품질·안전보건경영시스템 인증을 유지했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=156997"
+            },
+            {
+              "rank": 9,
+              "title": "철도연구기관 맞춤형 AI전환 진단 모델…SE학회서 최우수논문상 수상",
+              "outlet": "철도경제신문",
+              "summary_line": "한국철도기술연구원이 철도연구기관 맞춤형 AI전환 진단 모델 연구로 시스템엔지니어링학회 최우수논문상을 받았다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16879"
+            },
+            {
+              "rank": 10,
+              "title": "우간다, '4조' 규모 철도 프로젝트 추진… 케냐 국경 잇는다",
+              "outlet": "철도경제신문",
+              "summary_line": "우간다가 캄팔라~케냐 국경 272km 전철 건설에 4조7천억원 규모 사업을 추진하며 표준궤 철도 1단계에 착수한다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16863"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-16",
       "count": 18,
       "page": "days/2026-06-16/index.html",
@@ -285,5 +444,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-16T22:15:35.817436+00:00"
+  "updated_at": "2026-06-17T21:46:57.790075+00:00"
 }
