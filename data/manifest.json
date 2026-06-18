@@ -2,6 +2,151 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-18",
+      "count": 18,
+      "page": "days/2026-06-18/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "삼성 이어 SK도 HBM4E 샘플 공급…메모리 주도권 경쟁 점화(종합)",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "SK하이닉스가 차세대 AI 메모리 'HBM4E' 12단 샘플을 주요 고객사에 공급하며 삼성전자와의 차세대 메모리 주도권 경쟁이 본격화됐다.",
+              "url": "https://www.fnnews.com/news/202606180841000428"
+            },
+            {
+              "rank": 2,
+              "title": "[글로벌 AI 격전지 대한민국]④시급해진 K-AI, 로드맵 살펴보니…독파모 최종 2개팀 내년 2월 선정",
+              "outlet": "아시아경제",
+              "summary_line": "정부 주도 '독자 AI 파운데이션 모델(독파모)' 프로젝트의 최종 2개팀 선정 시점이 올해 12월에서 내년 2월로 연기됐다.",
+              "url": "https://www.asiae.co.kr/article/2026061809562312465"
+            },
+            {
+              "rank": 3,
+              "title": "정부, 앤트로픽과 'AI 안전' 협력 체결…글로벌 AI 동맹 확대",
+              "outlet": "ZDNet Korea",
+              "summary_line": "과학기술정보통신부가 앤트로픽과 AI 안전성 확보 및 사이버보안 분야 협력을 위한 업무협약(MOU)을 체결했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260618111149"
+            },
+            {
+              "rank": 4,
+              "title": "임우형 LG AI연구원장 \"제조 데이터, AI 핵심 자산\"…소버린 AI로 통제권 확보해야",
+              "outlet": "ZDNet Korea",
+              "summary_line": "임우형 LG AI연구원장이 글로벌 빅테크 경쟁 속에서 한국의 제조 데이터 주권을 지키기 위해 소버린 AI로 통제권을 확보해야 한다고 강조했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260618180943"
+            },
+            {
+              "rank": 5,
+              "title": "금융당국, 금융권 인공지능 전환 촉진…'AI 가이드라인' 개정안 발표",
+              "outlet": "뉴스핌",
+              "summary_line": "금융당국이 금융권의 AI 전환을 촉진하고 AI 에이전트 등 혁신 서비스 도입을 뒷받침하기 위한 '금융분야 AI 가이드라인' 개정안을 발표했다.",
+              "url": "https://www.newspim.com/news/view/20260618001016"
+            },
+            {
+              "rank": 6,
+              "title": "'클로드' 앤트로픽 한국 시장 진출 본격화···\"수출통제 곧 해소될 것\"",
+              "outlet": "경향신문",
+              "summary_line": "생성형 AI '클로드' 개발사 앤트로픽이 서울 사무소를 열고 한국 시장 진출을 본격화하며 최신 모델 수출통제 문제가 곧 해소될 것이라고 밝혔다.",
+              "url": "https://www.khan.co.kr/article/202606180001001"
+            },
+            {
+              "rank": 7,
+              "title": "AI 시대 이끌 스타트업 한자리에...'넥스트라이즈' 2026 개막",
+              "outlet": "뉴스핌",
+              "summary_line": "아시아 최대 스타트업 페어 '넥스트라이즈 2026 서울'이 코엑스에서 개막해 오픈AI·앤트로픽·엔비디아 등 글로벌 AI 기업이 역대 최대 규모로 집결했다.",
+              "url": "https://www.newspim.com/news/view/20260618000651"
+            },
+            {
+              "rank": 8,
+              "title": "대한항공, 美 안두릴 손잡고 AI 무인기 띄운다… '미래항공' 정조준",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "대한항공이 미국 방산기업 안두릴과 공동 개발 중인 AI 무인기 시험비행 영상을 처음 공개하고 지능형 관제·자율 조종·지능형 정비 등 3대 AI 핵심기술을 선보였다.",
+              "url": "https://www.fnnews.com/news/202606180844476399"
+            },
+            {
+              "rank": 9,
+              "title": "내년부터 AI로 라면·빵 가격 모니터링한다",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "정부가 내년부터 가공식품 13개 품목의 가격을 AI 기반으로 모니터링하는 지표를 운영해 물가 당국의 대응 역량을 강화하기로 했다.",
+              "url": "https://www.fnnews.com/news/202606171636137226"
+            },
+            {
+              "rank": 10,
+              "title": "KAIST-예술의전당, AI를 예술가의 동반자로",
+              "outlet": "베리타스알파",
+              "summary_line": "KAIST와 예술의전당이 문화예술과 AI의 창의적 융합을 위한 업무협약을 체결하고 AI를 예술가의 창의성을 확장하는 동반자로 활용하기로 했다.",
+              "url": "https://www.veritas-a.com/news/articleView.html?idxno=615602"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "\"GTX 철근 누락 허위·왜곡 보도\"…서울시, MBC 상대 3억원 규모 손배소 제기",
+              "outlet": "경향신문",
+              "summary_line": "서울시가 GTX-A 삼성역 구간 철근 누락 보도를 '허위·왜곡'으로 규정하고 MBC를 상대로 정정보도 청구와 3억원 규모의 손해배상 소송을 제기했다.",
+              "url": "https://www.khan.co.kr/article/202606181014001"
+            },
+            {
+              "rank": 2,
+              "title": "지역별 차등요금제 도입 앞두고…서울교통공사 \"도시철도 공공성 고려한 보완 장치 필요\"",
+              "outlet": "전기신문",
+              "summary_line": "정부가 검토 중인 지역별 전기요금 차등제가 도입되면 서울교통공사가 연간 약 258억원의 전력비를 추가 부담할 것으로 추산돼, 공사가 도시철도 공공성을 반영한 별도 지원과 '전기철도용 요금제' 신설을 촉구했다.",
+              "url": "https://www.electimes.com/news/articleView.html?idxno=369248"
+            },
+            {
+              "rank": 3,
+              "title": "코레일, 신규 개발사업 대상 철도부지 5곳 청사진 제시",
+              "outlet": "철도경제신문",
+              "summary_line": "코레일이 부산역, 서광주·순천역세권, 옛 원주역, 용산삼각지 등 유휴 철도부지 5곳의 개발 청사진을 '개발정보교류 포털'을 통해 선제 공개하며 민간 투자 유치에 나섰다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16885"
+            },
+            {
+              "rank": 4,
+              "title": "국가철도공단, 호남고속철도 2단계 신계고가 강아치교 거치 완료",
+              "outlet": "더퍼블릭",
+              "summary_line": "국가철도공단이 호남고속철도 2단계 구간에서 서해안고속도로 함평 횡단부의 폭 16.4m·길이 60m·755톤 아치형 철도교량(신계고가)을 대형 크레인 2대로 일괄 가설해 거치를 완료했다.",
+              "url": "https://www.thepublic.kr/news/articleView.html?idxno=308272"
+            },
+            {
+              "rank": 5,
+              "title": "홍지선 국토2차관, 장항선 건설 현장서 여름철 재난 대비 안전점검",
+              "outlet": "철도경제신문",
+              "summary_line": "홍지선 국토교통부 2차관이 장항선 개량 2단계 철도건설 현장을 찾아 여름철 풍수해·폭염 대비 상황을 점검하고 배수시설과 근로자 건강 보호 등 안전관리 강화를 당부했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16889"
+            },
+            {
+              "rank": 6,
+              "title": "코레일, '승강장 발빠짐 사고' 디지털 검측 기술로 예방",
+              "outlet": "철도경제신문",
+              "summary_line": "코레일이 라이다·ToF 센서를 활용해 열차와 승강장 사이 거리·높이를 자동 측정하는 '철도역사 고상홈 거리 자동측정 장비'를 서울역에서 시연하고 다음 달부터 시범운용에 들어간다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16887"
+            },
+            {
+              "rank": 7,
+              "title": "거대 기중기 투입! 실전 같은 철도 훈련 [열차한컷]",
+              "outlet": "철도경제신문",
+              "summary_line": "코레일 충북본부가 대형 기중기를 동원한 열차 탈선 사고 비상대응 종합훈련을 실시해 관제 보고·열차 방호·단계별 선로 안전확인까지 실전처럼 점검했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16881"
+            },
+            {
+              "rank": 8,
+              "title": "\"철도안전법, '명확성의 원칙'으로 생태계를 깨워라\"",
+              "outlet": "철도경제신문",
+              "summary_line": "철도안전법의 '철도용품' 정의에 포함된 포괄적 표현('등')이 규제 범위를 모호하게 만들어 기업 예측가능성을 떨어뜨린다며, 정밀한 정의와 소프트웨어 등 현대 철도시스템 요소의 명시적 포함을 제안하는 칼럼이 게재됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16851"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-17",
       "count": 20,
       "page": "days/2026-06-17/index.html",
@@ -444,5 +589,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-17T21:46:57.790075+00:00"
+  "updated_at": "2026-06-18T23:05:08.309649+00:00"
 }
