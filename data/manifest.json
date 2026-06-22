@@ -2,6 +2,165 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-19",
+      "count": 20,
+      "page": "days/2026-06-19/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "정부, AI 상용화 프로젝트 229개 선정…7540억원 투입",
+              "outlet": "전자신문",
+              "summary_line": "정부가 생활·산업 현장에 적용할 AI 응용제품 229개를 선정하고 7540억원을 투입해 1~2년 내 상용화를 지원하는 'AX 스프린트' 사업 선정 결과를 발표했다.",
+              "url": "https://www.etnews.com/20260619000207"
+            },
+            {
+              "rank": 2,
+              "title": "과기정통부 주도 '피지컬 AI 얼라이언스' 2기 출범…실행형 협력체계 전환",
+              "outlet": "전자신문",
+              "summary_line": "과학기술정보통신부가 '피지컬 AI 얼라이언스 2기'를 출범시키고 논의 중심에서 기술개발·산업적용·표준화로 이어지는 실행형 협력체계로 전환한다고 밝혔다.",
+              "url": "https://www.etnews.com/20260619000136"
+            },
+            {
+              "rank": 3,
+              "title": "SK하이닉스 이러다 삼성전자 추월?…7% 급등에 '280만닉스', 시총 2000조 돌파",
+              "outlet": "헤럴드경제",
+              "summary_line": "SK하이닉스가 차세대 AI 메모리 'HBM4E' 샘플 공급 소식 등에 힘입어 7% 넘게 급등하며 사상 처음으로 시가총액 2000조원을 돌파했다.",
+              "url": "https://biz.heraldcorp.com/article/10781663"
+            },
+            {
+              "rank": 4,
+              "title": "카카오, 'AI 방산' 진출 검토…'국방 모빌리티 OS' 구축한다",
+              "outlet": "이데일리",
+              "summary_line": "카카오가 카카오모빌리티의 배차·관제·최적화 기술을 군수 보급과 무인체계 운영에 적용하는 '국방 모빌리티 AI 플랫폼' 구축을 검토하고 있다.",
+              "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04060646645483360"
+            },
+            {
+              "rank": 5,
+              "title": "오픈AI, 한국서 '챗GPT 광고 파일럿' 시작…무료·Go 요금제 대상",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "오픈AI가 미국·영국 등에 이어 한국에서도 챗GPT 무료·Go 요금제 이용자를 대상으로 한 광고 파일럿 서비스를 시작했다.",
+              "url": "https://www.fnnews.com/news/202606190939474475"
+            },
+            {
+              "rank": 6,
+              "title": "SKT, '에이닷 노트' 정식 출시···'클로바' 아성 넘는다",
+              "outlet": "뉴스웨이",
+              "summary_line": "SK텔레콤이 약 1년의 베타 기간을 거친 AI 회의록 서비스 '에이닷 노트'를 23일부로 정식 서비스로 전환한다고 밝혔다.",
+              "url": "https://www.newsway.co.kr/news/view?ud=2026061816244327591"
+            },
+            {
+              "rank": 7,
+              "title": "저축은행 CEO들 한자리에…AI 보안 리스크 대응 논의",
+              "outlet": "EBN",
+              "summary_line": "저축은행중앙회와 금융보안원이 공동 세미나를 열어 AI를 악용한 지능형 사이버 공격 급증에 대한 대응 전략을 논의했다.",
+              "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1713231"
+            },
+            {
+              "rank": 8,
+              "title": "삼성전자·SK하이닉스 넘어선 비트코인…AI 반도체 수급 우려 속 엇갈린 흐름",
+              "outlet": "뉴스1",
+              "summary_line": "AI 반도체 수요 확대 기대 속에 국내 반도체주가 강세를 보인 반면 비트코인은 자금 유입 둔화로 약세를 보이며 글로벌 자산 시총 순위에서 희비가 엇갈렸다.",
+              "url": "https://news.nate.com/view/20260619n28902"
+            },
+            {
+              "rank": 9,
+              "title": "AI가 영화를 만들고 팬덤을 키운다…KNOCK 스페셜 라운드가 보여준 K-콘텐츠의 변화",
+              "outlet": "벤처스퀘어",
+              "summary_line": "한국콘텐츠진흥원의 콘텐츠 투자 IR 플랫폼 'KNOCK' 스페셜 라운드에서 AI와 콘텐츠를 결합한 유망 스타트업 10개사가 사업 모델과 성장 전략을 발표했다.",
+              "url": "https://www.venturesquare.net/1092290"
+            },
+            {
+              "rank": 10,
+              "title": "'엔비디아 CEO 원픽' 화사, 젠슨 황 샤라웃에 \"실감 안 나. AI인 줄\" 깜짝",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "방한한 엔비디아 젠슨 황 CEO가 국내 예능에서 가수 화사를 직접 언급하며 호평하자 화사가 \"처음엔 AI인 줄 알았다\"고 반응한 사실이 보도됐다.",
+              "url": "https://www.fnnews.com/news/202606191149452318"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "철도 3사 경평 나란히 C·D등급…안전·재무 부실 발목",
+              "outlet": "뉴스핌",
+              "summary_line": "코레일·국가철도공단·SR 등 철도 공기업 3사가 2025년도 공공기관 경영평가에서 모두 C등급 이하를 받으며 안전사고와 재무 부실이 발목을 잡았다.",
+              "url": "https://www.newspim.com/news/view/20260619000853"
+            },
+            {
+              "rank": 2,
+              "title": "'K-철도, 모로코 달린다'… 코레일 전동열차 사업 후속 계약 체결",
+              "outlet": "쿠키뉴스",
+              "summary_line": "코레일이 모로코 정부의 전동차 440칸 도입 사업에서 약 90억 원 규모의 총괄관리(PMC)와 유지보수 자문 사업을 따내며 K-철도 운영 노하우 수출을 본격화했다.",
+              "url": "https://www.kukinews.com/article/view/kuk202606190077"
+            },
+            {
+              "rank": 3,
+              "title": "국가철도공단, 페루 철도 관계자 대상 K-철도 노하우 전수",
+              "outlet": "한국철도일보",
+              "summary_line": "국가철도공단이 페루 친체로 공항철도 사업과 연계해 페루 고위 공무원을 초청, K-철도 정책과 KTCS-2·TOD 전략 등 핵심 기술을 5일간 집중 전수했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=158157"
+            },
+            {
+              "rank": 4,
+              "title": "안전이 좌우할 국토부 산하기관 경평…도로·철도 '긴장', HUG '기대'",
+              "outlet": "뉴스핌",
+              "summary_line": "이재명 정부의 공공기관 경영평가에서 안전과 공공성이 핵심 잣대로 부각되면서 코레일·국가철도공단 등 국토부 산하 철도기관들이 안전사고 여파로 긴장하고 있다.",
+              "url": "https://www.newspim.com/news/view/20260619000643"
+            },
+            {
+              "rank": 5,
+              "title": "대전교통公, 노후 엘리베이터 27대 교체 착수…2028년까지 전 구간",
+              "outlet": "철도경제신문",
+              "summary_line": "대전교통공사가 도시철도 1호선 노후 엘리베이터 27대를 우선 교체하는 사업에 착수해 2028년까지 전 구간 설비를 단계적으로 교체하기로 했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16904"
+            },
+            {
+              "rank": 6,
+              "title": "지하철에서 만나는 지역 특산물... 서울Pick 확대 운영",
+              "outlet": "한국철도일보",
+              "summary_line": "서울교통공사가 지하철 유휴공간을 활용한 지역 특산물 판매 매장 '서울Pick'을 군산·상주·포천·장성 등으로 확대해 도농 상생과 지역경제 활성화에 나섰다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=157918"
+            },
+            {
+              "rank": 7,
+              "title": "\"鐵車산업 지속가능한 미래, 상생 발전이 유일한 해법\"",
+              "outlet": "철도경제신문",
+              "summary_line": "한국철도차량엔지니어링 산·학·연 토론회에서 철도차량 유지보수 최적화와 품질 혁신을 위한 산학연 협력이 철도산업 지속가능성의 핵심 해법으로 제시됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16906"
+            },
+            {
+              "rank": 8,
+              "title": "전기철도 산업인 한자리에… 첫 기념행사 열려",
+              "outlet": "한국철도일보",
+              "summary_line": "전기철도 산업 종사자들이 처음으로 한자리에 모여 '전기철도인의 날' 기념행사를 열고 산업 발전 유공자 시상과 명예의 전당 헌액을 진행했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=158103"
+            },
+            {
+              "rank": 9,
+              "title": "전동차 공급 이어 유지보수까지… 현대로템, 모로코 공략 확대",
+              "outlet": "한국철도일보",
+              "summary_line": "현대로템이 모로코 철도청과 약 7482억 원 규모의 전동차 유지보수·자재관리 계약을 체결하며 차량 공급을 넘어 운영 단계까지 모로코 시장 공략을 확대했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=157917"
+            },
+            {
+              "rank": 10,
+              "title": "프랑스, 자율주행 경량 배터리 열차 '에코트레인' 공개",
+              "outlet": "철도경제신문",
+              "summary_line": "프랑스가 소규모 노선의 운영·유지비를 줄이기 위한 자율주행 경량 배터리 열차 '에코트레인'의 여객용 시연 모델을 공개했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16895"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-18",
       "count": 18,
       "page": "days/2026-06-18/index.html",
@@ -589,5 +748,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-18T23:05:08.309649+00:00"
+  "updated_at": "2026-06-22T13:50:59.600966+00:00"
 }
