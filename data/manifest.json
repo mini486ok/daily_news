@@ -2,6 +2,165 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-22",
+      "count": 20,
+      "page": "days/2026-06-22/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "오픈AI 최대 고객된 삼성전자, 이재용 회장의 AX 본궤도",
+              "outlet": "뉴스핌",
+              "summary_line": "삼성전자가 국내 전 임직원과 글로벌 DX부문에 챗GPT 엔터프라이즈와 AI 코딩도구 코덱스를 도입하며 오픈AI 역사상 최대 규모급 기업 계약을 맺었다.",
+              "url": "https://www.newspim.com/news/view/20260622000869"
+            },
+            {
+              "rank": 2,
+              "title": "[Market Special] 25년 7개월 만의 '대지각변동'…SK하이닉스, 삼성전자 제치고 코스피 시총 1위 등극",
+              "outlet": "비즈니스코리아",
+              "summary_line": "AI용 HBM 우위를 앞세운 SK하이닉스가 25년 7개월 만에 삼성전자를 제치고 코스피 시가총액 1위에 올랐다.",
+              "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=271751"
+            },
+            {
+              "rank": 3,
+              "title": "나델라 MS CEO \"소수 AI 독식 막겠다\"... 中 '딥시크' 탑재 검토",
+              "outlet": "뉴스핌",
+              "summary_line": "사티아 나델라 MS CEO가 소수 기업의 AI 시장 독점을 비판하며 중국 저가 모델 딥시크의 코파일럿 탑재를 검토 중이라고 밝혔다.",
+              "url": "https://www.newspim.com/news/view/20260622000881"
+            },
+            {
+              "rank": 4,
+              "title": "[AI로 읽는 경제] 트럼프 반도체 전쟁 2막…美·中 사이 韓 생존법은",
+              "outlet": "뉴스핌",
+              "summary_line": "대외경제정책연구원이 미국의 반도체 수출통제 압박 속 한국이 공급망 다변화와 상류 기술 경쟁력 강화로 위험을 분산해야 한다고 제언했다.",
+              "url": "https://www.newspim.com/news/view/20260622000058"
+            },
+            {
+              "rank": 5,
+              "title": "\"6월은 역사상 최다 AI 모델 출시 달\"…단일 공급사 의존 위험",
+              "outlet": "ZDNet Korea",
+              "summary_line": "2026년 6월 한 달간 사상 최다 AI 모델이 쏟아지면서 특정 공급사 한 곳에 의존하는 시스템 설계가 불필요한 위험이라는 지적이 나왔다.",
+              "url": "https://zdnet.co.kr/view/?no=20260622165220"
+            },
+            {
+              "rank": 6,
+              "title": "한전, '사내표준 AI 플랫폼' 구축… \"AI가 사규 찾고 개정안까지 만든다\"",
+              "outlet": "에너지데일리",
+              "summary_line": "한국전력이 2,400여 종 사내규정을 통합한 생성형 AI 기반 사내표준 플랫폼을 정식 오픈해 법령 개정 시 개정안 초안까지 자동 제시한다.",
+              "url": "https://www.energydaily.co.kr/news/articleView.html?idxno=200657"
+            },
+            {
+              "rank": 7,
+              "title": "KT, 'K-PATH 2026' 공모 시작…\"AI 스타트업과 고객 AX 혁신\"",
+              "outlet": "헤럴드경제",
+              "summary_line": "KT가 고객 AX 혁신을 함께 추진할 AI 스타트업 최대 20곳을 발굴하는 오픈 이노베이션 프로그램 'K-PATH 2026' 공모를 시작했다.",
+              "url": "https://biz.heraldcorp.com/article/10783284"
+            },
+            {
+              "rank": 8,
+              "title": "군의관 56% 급감… 軍, AI로 '의료전력 재편' 착수",
+              "outlet": "뉴스핌",
+              "summary_line": "군의관이 전년 대비 56% 급감하자 국방부와 의무사령부가 의료영상 판독 AI 등을 활용한 군 의료 AI 중장기 발전계획에 착수했다.",
+              "url": "https://www.newspim.com/news/view/20260622000509"
+            },
+            {
+              "rank": 9,
+              "title": "산업부, 조선 산단 3곳 AI 전환 거점화…K-조선 공급망 경쟁력 높인다",
+              "outlet": "뉴스핌",
+              "summary_line": "산업통상부가 대불·명지녹산·군산 산업단지를 제조 AI 전환 거점으로 지정해 데이터·AI 모델을 공동 활용하는 AI 조선 공급망 구축에 나섰다.",
+              "url": "https://www.newspim.com/news/view/20260622000255"
+            },
+            {
+              "rank": 10,
+              "title": "HBM 칩스 다음은 '메~몰이소녀'…SK하이닉스의 '파격' 광고까지",
+              "outlet": "세계일보",
+              "summary_line": "SK하이닉스가 실제 배우 촬영에 생성형 AI를 결합한 하이브리드 프로덕션 방식으로 메모리 반도체를 친숙하게 알리는 파격 기업 광고를 공개했다.",
+              "url": "https://segye.com/newsView/20260622501743"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "차세대 KTX, 미래 철도산업 도약 위한 마중물 [노후 KTX-1 교체]",
+              "outlet": "철도경제신문",
+              "summary_line": "노후 KTX-1 교체를 단순 차량 구매가 아니라 국내 철도산업의 기술 발전을 견인하는 산업정책적 투자로 봐야 한다는 분석이 제기됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16925"
+            },
+            {
+              "rank": 2,
+              "title": "철도연, 철도 특화 로봇 기반 선로점검 핵심기술 개발 착수",
+              "outlet": "철도경제신문",
+              "summary_line": "한국철도기술연구원이 디지털 트윈 가상환경에서 학습하는 자율 선로점검 로봇 핵심기술 개발에 착수했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16910"
+            },
+            {
+              "rank": 3,
+              "title": "\"고속철도 상호지원, '처음'의 설계가 가른다\"",
+              "outlet": "철도경제신문",
+              "summary_line": "KTX·산천·SRT·EMU 등 서로 다른 고속차량이 한 노선을 달리는 현실에서 중련운전·비상운전·구원연결 기술기준을 처음부터 표준화해야 한다는 제언이 나왔다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16901"
+            },
+            {
+              "rank": 4,
+              "title": "대전교통公, 노후 엘리베이터 27대 교체 착수…2028년까지 전 구간",
+              "outlet": "철도경제신문",
+              "summary_line": "대전교통공사가 22일부터 도시철도 1호선 노후 엘리베이터 27대 교체에 착수해 2028년까지 전 구간을 단계적으로 교체한다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16904"
+            },
+            {
+              "rank": 5,
+              "title": "서울지하철이 '지역 농가 판로' 된다",
+              "outlet": "국토교통뉴스",
+              "summary_line": "서울교통공사가 지하철 역사 유휴공간을 활용한 '서울Pick' 도농상생 직거래장터로 지역 농가 판로를 넓힌다.",
+              "url": "https://www.guktonews.co.kr/6631"
+            },
+            {
+              "rank": 6,
+              "title": "\"세계 최고 수준 전철화, 글로벌 시장으로 지평 넓힐 것\" [제1회 전기철도인의 날 기념식]",
+              "outlet": "철도경제신문",
+              "summary_line": "한국전기철도기술협회가 6월 20일을 '전기철도인의 날'로 제정하고 첫 기념식을 열어 K-전기철도의 글로벌 진출 의지를 밝혔다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16917"
+            },
+            {
+              "rank": 7,
+              "title": "美캘리포니아 고속철도, 실제 운영 위한 시스템 구축 본격화",
+              "outlet": "철도경제신문",
+              "summary_line": "미국 캘리포니아 고속철도청이 약 35억 달러 규모의 선로 부설·전철화·열차제어 시스템 구축 계약을 체결하며 운영 단계 준비에 들어갔다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16916"
+            },
+            {
+              "rank": 8,
+              "title": "철도공단, 페루 고위급 공무원 초청 철도정책 연수",
+              "outlet": "철도경제신문",
+              "summary_line": "국가철도공단이 페루 교통통신부 고위급 공무원을 초청해 한국 철도정책·KTCS-2·TOD 전략을 공유하는 연수를 진행했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16914"
+            },
+            {
+              "rank": 9,
+              "title": "[기고] \"철도의 존재 목적, 안전인가 운송인가\"",
+              "outlet": "철도경제신문",
+              "summary_line": "철도의 본질은 운송이며 안전은 그 전제조건이라며, '안전을 기반으로 한 운송 최우선'으로 패러다임을 전환하자는 기고가 실렸다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16909"
+            },
+            {
+              "rank": 10,
+              "title": "\"'예쁜 쓰레기'라 불려도 좋아\" 우리가 '철도 굿즈'를 사는 이유 [철도이야기]",
+              "outlet": "철도경제신문",
+              "summary_line": "철도 굿즈 소비 현상을 통해 철도가 단순 운송수단을 넘어 문화와 추억으로 소비되고 있음을 짚은 칼럼이다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16911"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-20",
       "count": 12,
       "page": "days/2026-06-20/index.html",
@@ -851,5 +1010,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-22T14:51:18.395145+00:00"
+  "updated_at": "2026-06-22T15:17:45.474470+00:00"
 }
