@@ -2,6 +2,109 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-20",
+      "count": 12,
+      "page": "days/2026-06-20/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "구글이 4조원 들여 데려온 '트랜스포머' 공동저자, 오픈AI로 떠났다",
+              "outlet": "중앙일보(미주중앙일보)",
+              "summary_line": "구글이 약 4조원을 들여 재영입했던 트랜스포머 논문 공동저자 노엄 샤지어가 2년도 안 돼 오픈AI로 자리를 옮기며 빅테크의 AI 인재 쟁탈전이 정점에 달했음을 보여줬다.",
+              "url": "https://www.koreadaily.com/article/20260620225247386"
+            },
+            {
+              "rank": 2,
+              "title": "구글·MS, AI 에이전트 연결 표준 'ARD' 발표…오픈AI·앤트로픽 견제 나서",
+              "outlet": "AI타임스",
+              "summary_line": "구글과 마이크로소프트를 비롯한 글로벌 기업용 소프트웨어 진영이 AI 에이전트가 업무 애플리케이션과 기능을 자동 탐색하도록 돕는 개방형 표준 'ARD'를 공동 추진하며 오픈AI·앤트로픽 견제에 나섰다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211930"
+            },
+            {
+              "rank": 3,
+              "title": "\"맛 설계하는 AI, 사람 구하는 드론\"…정부, 229개 AX 과제 선정",
+              "outlet": "시티타임스",
+              "summary_line": "정부가 생활·산업 현장의 AI 전환을 가속하기 위해 229개 제품·서비스를 'AX 스프린트' 과제로 선정하고 총 7540억원을 투입해 1~2년 내 상용화를 지원한다.",
+              "url": "https://www.citytimes.co.kr/news/articleViewAmp.html?idxno=88779"
+            },
+            {
+              "rank": 4,
+              "title": "'알파폴드' 노벨상 존 점퍼, 구글 떠나 앤트로픽 합류",
+              "outlet": "AI타임스",
+              "summary_line": "단백질 구조 예측 AI '알파폴드'로 2024년 노벨 화학상을 받은 존 점퍼가 약 9년 만에 구글 딥마인드를 떠나 앤트로픽에 합류한다고 밝혔다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211937"
+            },
+            {
+              "rank": 5,
+              "title": "한국딥러닝, VLM 기반 '딥 에이전트' 공개… 제조·금융 비정형 문서 처리 정조준",
+              "outlet": "산업일보",
+              "summary_line": "문서 AI 기업 한국딥러닝이 넥스트라이즈 2026 서울에서 자체 비전언어모델(VLM)을 적용한 '딥 에이전트'를 공개하며 제조·금융 현장의 비정형 문서 처리 시장을 겨냥했다.",
+              "url": "https://kidd.co.kr/news/246413"
+            },
+            {
+              "rank": 6,
+              "title": "노르웨이, 초등학교 생성 AI 사실상 금지…\"읽기·쓰기·수학이 먼저\"",
+              "outlet": "AI타임스",
+              "summary_line": "노르웨이 정부가 8월부터 초등학교 1~7학년에서 생성형 AI 사용을 원칙적으로 금지하며 기초 학습 능력을 먼저 길러야 한다는 교육 철학을 분명히 했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211940"
+            },
+            {
+              "rank": 7,
+              "title": "'AI 활용 우수' 한수원…3년 연속 A등급",
+              "outlet": "아시아경제",
+              "summary_line": "한국수력원자력이 2025년도 공공기관 경영평가에서 3년 연속 우수(A) 등급을 받았으며, 새로 신설된 AI 혁신 가점 지표에서 원전 운영에 AI를 적극 활용한 점이 우수사례로 평가됐다.",
+              "url": "https://www.asiae.co.kr/article/2026062010593931080"
+            },
+            {
+              "rank": 8,
+              "title": "'GIST-Arm 스쿨' 22일까지 첫 교육생 모집",
+              "outlet": "AI타임스",
+              "summary_line": "광주과학기술원(GIST)이 Arm과의 업무협약을 통해 국내 최초의 Arm 공식 인증 반도체 설계 교육 프로그램 'GIST-Arm 스쿨'을 열고 첫 교육생을 모집한다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211945"
+            },
+            {
+              "rank": 9,
+              "title": "[양현상 칼럼] 'AI 융합' 없는 방산 기업은 도태된다…미·이란 전쟁이 던진 경고",
+              "outlet": "AI타임스",
+              "summary_line": "최근 미·이란 군사 충돌을 계기로 현대전이 AI 기반 자율 표적 식별·드론 군집 통제로 재편되면서 AI 융합 없는 방산 기업은 도태될 수밖에 없다는 경고가 제기됐다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211935"
+            },
+            {
+              "rank": 10,
+              "title": "에버퓨어 \"단순 저장 넘어 '데이터 인텔리전스' 역량 강화\"",
+              "outlet": "AI타임스",
+              "summary_line": "스토리지 기업 에버퓨어(전 퓨어스토리지)가 사명 변경과 원터치 인수를 마치고 단순 데이터 저장을 넘어 'AI 시대의 데이터 인텔리전스' 플랫폼으로 전환하는 전략을 본격화했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=211942"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "파주 도라전망대 오르던 관광버스 전도…외국인 등 10명 다쳐",
+              "outlet": "서울신문",
+              "summary_line": "6월 20일 오전 경기 파주 도라전망대 인근 오르막길에서 DMZ 평화관광 코스를 달리던 45인승 관광버스가 빗길에 미끄러져 전도되면서 외국인 관광객을 포함한 10명이 다쳤다.",
+              "url": "https://www.seoul.co.kr/news/society/2026/06/20/20260620500025"
+            },
+            {
+              "rank": 2,
+              "title": "GTX-A 논란 이어…서울시·국토부 '기동카'도 신경전",
+              "outlet": "더팩트",
+              "summary_line": "서울시가 기후동행카드를 정부 K패스(모두의카드)와 통합한 '기후동행카드 플러스' 출시를 발표한 데 대해 국토부가 \"통합은 사실이 아니다\"라고 반박하면서, GTX-A 철근 누락 논란에 이어 양 기관의 교통정책 갈등이 재점화됐다.",
+              "url": "https://news.nate.com/view/20260620n00072"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-19",
       "count": 20,
       "page": "days/2026-06-19/index.html",
@@ -748,5 +851,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-22T13:50:59.600966+00:00"
+  "updated_at": "2026-06-22T14:51:18.395145+00:00"
 }
