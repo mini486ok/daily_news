@@ -2,6 +2,165 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-23",
+      "count": 20,
+      "page": "days/2026-06-23/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "나델라 MS CEO \"AI 소수 독점 안 돼\"…오픈AI·앤트로픽 견제 본격화",
+              "outlet": "AI타임스",
+              "summary_line": "사티아 나델라 마이크로소프트 CEO가 소수 기업의 AI 모델 독점을 경고하며 다양한 모델이 경쟁하는 상품화 시장으로의 전환을 강조했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212016"
+            },
+            {
+              "rank": 2,
+              "title": "엔비디아, 로봇 전용 안전 시스템 '할로스' 공개…\"인간과 로봇의 안전한 협업\"",
+              "outlet": "AI타임스",
+              "summary_line": "엔비디아가 휴머노이드 로봇과 인간이 같은 공간에서 안전하게 협업하도록 돕는 통합 안전 플랫폼 '할로스 포 로보틱스'를 공개했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212022"
+            },
+            {
+              "rank": 3,
+              "title": "네이버, 범용 인코더 '디바인'으로 로봇 메모리 사용량 62% 감소",
+              "outlet": "AI타임스",
+              "summary_line": "네이버랩스 유럽이 여러 시각 AI 인코더를 하나로 통합한 범용 인코더 '디바인'을 공개해 로봇 메모리 사용량을 62% 줄였다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212015"
+            },
+            {
+              "rank": 4,
+              "title": "오라클, AI 인프라 투자 확대로 2만1000명 감원",
+              "outlet": "AI타임스",
+              "summary_line": "오라클이 막대한 AI 인프라 투자 부담 속에 전체 인력의 13%인 2만1000명을 감원했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212026"
+            },
+            {
+              "rank": 5,
+              "title": "국내 AI기업 성장 도모...'2026 공공 AI 박람회' [포토]",
+              "outlet": "이투데이",
+              "summary_line": "행정안전부 주최 '2026 공공 AI 박람회'가 킨텍스에서 개막해 공공 분야 AI 기술과 서비스를 한자리에 선보였다.",
+              "url": "https://www.etoday.co.kr/news/view/2596477"
+            },
+            {
+              "rank": 6,
+              "title": "마이크론, 앤트로픽 투자 이어 메모리 공급 파트너십",
+              "outlet": "AI타임스",
+              "summary_line": "메모리 제조사 마이크론이 앤트로픽과 AI 메모리·스토리지 공급 및 클로드 도입을 포함한 전략적 파트너십을 맺었다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212018"
+            },
+            {
+              "rank": 7,
+              "title": "\"AI가 스스로 규칙 고친다\"…모델 성능 60% 끌어올린 '셀프-하네스' 등장",
+              "outlet": "AI타임스",
+              "summary_line": "중국 상하이 AI 연구소가 AI 에이전트가 인간 개입 없이 자체 운영 규칙을 개선하는 '셀프-하네스' 프레임워크를 발표해 모델 성능을 최대 60% 끌어올렸다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212024"
+            },
+            {
+              "rank": 8,
+              "title": "크라우드아카데미, 기업 AI 교육 매출 390% 증가...\"제조업 AX 수요 급부상\"",
+              "outlet": "AI타임스",
+              "summary_line": "크라우드아카데미가 기업 대상 AI 교육 매출이 전년 대비 390% 증가했으며 제조업의 AX(AI 전환) 수요가 가장 높았다고 밝혔다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212004"
+            },
+            {
+              "rank": 9,
+              "title": "英 정부, \"앨런 튜링의 유산 이어간다\"...차세대 AI 연구소 2곳 설립, 6000만 파운드 투자",
+              "outlet": "인공지능신문",
+              "summary_line": "영국 정부가 최대 6000만 파운드를 투자해 오픈소스 AI와 효율적 학습에 집중하는 차세대 AI 연구소 2곳을 설립한다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40640"
+            },
+            {
+              "rank": 10,
+              "title": "하이크비전, AIoT 제품 개발 전 과정에 보안 적용…2026년 사이버보안 백서 발간",
+              "outlet": "데일리시큐",
+              "summary_line": "하이크비전코리아가 AI 모델 보안과 데이터 보호를 다룬 '2026년 사이버보안 백서'를 발간하며 제품 개발 전 과정에 보안을 적용했다고 밝혔다.",
+              "url": "https://www.dailysecu.com/news/articleView.html?idxno=207271"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "서울시, 지하철 무임승차 70세 상향·버스도 포함 추진",
+              "outlet": "이로운넷",
+              "summary_line": "서울시가 40여 년간 유지된 지하철 무임승차 기준을 65세에서 70세로 올리고 절감 재원을 버스비 지원에 쓰는 방안을 공론화했다.",
+              "url": "https://www.eroun.net/news/articleView.html?idxno=83731"
+            },
+            {
+              "rank": 2,
+              "title": "24일「2026년 철도의 날」기념행사 개최…\"세계를 여는 K-철도, 함께 성장하는 대한민국\"",
+              "outlet": "서울경제",
+              "summary_line": "국토교통부가 6월 24일 철도의 날 기념식을 열어 우즈베키스탄 고속철 수출 등 K-철도의 해외 진출 성과를 공유한다고 밝혔다.",
+              "url": "https://www.sedaily.com/article/20059031"
+            },
+            {
+              "rank": 3,
+              "title": "\"통합 재는 잣대, '효과의 목적함수'로 바꿔야\" [2026 고속철도 거버넌스]",
+              "outlet": "철도경제신문",
+              "summary_line": "고속철도 통합을 '효율'이라는 단일 잣대가 아니라 가격 규율·접근성·책임구조를 포함한 '효과의 목적함수'로 평가해야 한다는 분석이 제기됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16921"
+            },
+            {
+              "rank": 4,
+              "title": "\"다원시스 사태, 멈춰버린 철도 검증 제도\"",
+              "outlet": "철도경제신문",
+              "summary_line": "다원시스 전동차 납품 지연·부품 결함 사태가 철도 차량 검증 제도의 구조적 결함을 드러냈다는 비판이 제기됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16902"
+            },
+            {
+              "rank": 5,
+              "title": "[TODAY인] 우리 자율주행 기술의 현재와 미래는?",
+              "outlet": "YTN 사이언스",
+              "summary_line": "국토부 장관은 광주 자율주행 실증도시를 중심으로 한국을 글로벌 자율주행 3대 강국으로 도약시키겠다는 구상을 밝혔다.",
+              "url": "https://science.ytn.co.kr/program/view.php?mcd=0082&hcd=0048&key=202606231604245967"
+            },
+            {
+              "rank": 6,
+              "title": "대전 도시철도 2호선 트램, 사업계획 변경 착수",
+              "outlet": "로컬세계",
+              "summary_line": "대전시가 도시철도 2호선 트램 개통 시기를 당초 2028년 말에서 2030년 하반기로 사실상 늦추는 사업계획 변경에 착수했다.",
+              "url": "https://localsegye.co.kr/news/view/1065574190782676"
+            },
+            {
+              "rank": 7,
+              "title": "[기고] 2.3조 수도권 연락운임 정산…\"운송실적 기반 고도화해야\"",
+              "outlet": "철도경제신문",
+              "summary_line": "약 2.3조 원 규모 수도권 도시철도 연락운임 정산의 정확성을 높이려면 개별카드 기반 경로확정 플랫폼이 필요하다는 제언이 나왔다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16924"
+            },
+            {
+              "rank": 8,
+              "title": "대전교통公, 도시철도 전 구간 노후 엘리베이터 교체 착수",
+              "outlet": "철도경제신문",
+              "summary_line": "대전교통공사가 시민 안전과 교통약자 편의를 위해 도시철도 전 구간 노후 엘리베이터 교체 사업에 들어갔다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16928"
+            },
+            {
+              "rank": 9,
+              "title": "광주교통공사, 철도 안전 확보 위한 실전형 재난대응훈련 실시",
+              "outlet": "한국철도일보",
+              "summary_line": "광주교통공사가 차량기지에서 테러 화재와 전동차 탈선을 가정한 실전형 재난대응훈련을 실시해 철도·소방 협업 체계를 점검했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=159398"
+            },
+            {
+              "rank": 10,
+              "title": "이마트서 모은 폐플라스틱, 용산역 휴식공간으로 재탄생한다",
+              "outlet": "한국철도일보",
+              "summary_line": "코레일·이마트·테라사이클이 폐플라스틱을 업사이클링한 벤치 30대를 용산역 맞이방에 설치하는 자원순환 협약을 체결했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=159394"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-22",
       "count": 20,
       "page": "days/2026-06-22/index.html",
@@ -1127,5 +1286,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-22T15:22:39.634353+00:00"
+  "updated_at": "2026-06-23T20:13:56.150483+00:00"
 }
