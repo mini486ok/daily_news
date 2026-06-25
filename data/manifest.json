@@ -2,6 +2,165 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-25",
+      "count": 20,
+      "page": "days/2026-06-25/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "오픈AI, 자체 칩 '할라페뇨' 공개…\"엔비디아·구글 칩과 대등한 성능\"",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "오픈AI가 브로드컴과 공동 개발한 추론 특화 자체 AI 칩 '할라페뇨'를 공개하며 엔비디아 의존도 낮추기에 나섰다.",
+              "url": "https://www.fnnews.com/news/202606250927088998"
+            },
+            {
+              "rank": 2,
+              "title": "마이크론 매출 4배 껑충…삼성전자·SK하이닉스, '2분기 160조 영업익' 합작하나",
+              "outlet": "뉴시스",
+              "summary_line": "마이크론이 AI 수요로 분기 매출 414억달러 사상 최대 실적을 내며 삼성전자·SK하이닉스 2분기 실적 기대를 끌어올렸다.",
+              "url": "https://www.newsis.com/view/NISX20260625_0003683066"
+            },
+            {
+              "rank": 3,
+              "title": "퀄컴, AI 데이터센터 청사진 공개...\"전용 CPU 2028년 출시\"",
+              "outlet": "ZDNet Korea",
+              "summary_line": "퀄컴이 에이전틱 AI 시대를 겨냥한 데이터센터 통합 플랫폼 전략과 2028년 전용 CPU 출시 계획을 공개했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260625062146"
+            },
+            {
+              "rank": 4,
+              "title": "에이전틱 AI '갤럭시 S26 시리즈' 흥행돌풍… 역대 최다 135만대 예약",
+              "outlet": "서울신문",
+              "summary_line": "삼성 갤럭시 S26 시리즈가 에이전틱 AI를 앞세워 국내 사전 판매 135만대로 역대 갤럭시 S 최다 기록을 세웠다.",
+              "url": "https://www.seoul.co.kr/news/economy/business-news/2026/06/25/20260625500050"
+            },
+            {
+              "rank": 5,
+              "title": "\"AI 정치성향, 챗GPT '좌편향'…제미나이만 '중립'\"",
+              "outlet": "서울신문",
+              "summary_line": "워싱턴포스트 분석 결과 챗GPT·클로드 등 주요 AI 챗봇이 진보 성향을 보였고 구글 제미나이만 중립적이었다.",
+              "url": "https://www.seoul.co.kr/news/international/USA-amrica/2026/06/25/20260625500267"
+            },
+            {
+              "rank": 6,
+              "title": "SKT, AI 자율 네트워크 레벨4 추진…차세대 OSS 전환 박차",
+              "outlet": "전자신문",
+              "summary_line": "SK텔레콤이 TM 포럼에서 AI가 스스로 망을 운영하는 자율 네트워크 레벨4 추진 전략을 공개했다.",
+              "url": "https://www.etnews.com/20260625000120"
+            },
+            {
+              "rank": 7,
+              "title": "앤트로픽 \"알리바바, 허위 계정 2만5천개로 AI 모델 무단 접근 시도\"",
+              "outlet": "CBC뉴스",
+              "summary_line": "앤트로픽이 알리바바가 허위 계정 2만5천개로 클로드에 무단 접근해 적대적 증류를 시도했다고 주장했다.",
+              "url": "https://www.cbci.co.kr/news/articleView.html?idxno=584533"
+            },
+            {
+              "rank": 8,
+              "title": "마이크론 \"AI 메모리 호황 안 끝났다…2028년에야 공급난 완화\"",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "마이크론 CEO가 AI 메모리 공급난이 2028년에야 완화될 것이라며 호황 장기화를 전망했다.",
+              "url": "https://www.fnnews.com/news/202606250947281123"
+            },
+            {
+              "rank": 9,
+              "title": "\"엔비디아 마진도 제쳤다\"…마이크론 이익률 85%, 美빅테크 선두",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "마이크론이 매출총이익률 84.9%로 엔비디아·메타를 제치고 미국 빅테크 중 최고 수익성을 기록했다.",
+              "url": "https://www.fnnews.com/news/202606250942373297"
+            },
+            {
+              "rank": 10,
+              "title": "SKT, SK하이닉스 미국 AI 투자법인에 7384억원 출자",
+              "outlet": "아시아경제",
+              "summary_line": "SK텔레콤이 SK하이닉스의 미국 AI 투자법인에 약 7384억원을 출자하기로 결정했다.",
+              "url": "https://www.asiae.co.kr/article/2026062523000028872"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "로봇개 걷고 AI가 결함 찾는다…코엑스에 펼쳐진 국토교통의 미래 [영상]",
+              "outlet": "매일신문",
+              "summary_line": "2026 국토교통기술대전에서 현대로템이 최고 시속 370㎞급 차세대 고속열차 'EMU-370' 모형을 공개하고 코레일은 KTX 운전 시뮬레이터와 4족 보행 구난 로봇 등을 전시했다.",
+              "url": "https://www.imaeil.com/page/view/2026062421382404147"
+            },
+            {
+              "rank": 2,
+              "title": "김윤덕 국토장관 \"철도 안전, 과하다 싶을 정도로 챙겨야\"",
+              "outlet": "뉴스핌",
+              "summary_line": "2026 철도의 날 기념식에서 김윤덕 국토교통부 장관이 \"아무리 빠른 철도도 안전을 앞설 수는 없다\"며 안전 최우선 원칙을 강조했다.",
+              "url": "https://www.newspim.com/news/view/20260625001113"
+            },
+            {
+              "rank": 3,
+              "title": "코레일, '국제철도연맹UIC 아태지역총회' 서울 개최",
+              "outlet": "물류신문",
+              "summary_line": "코레일이 6월 25~26일 서울에서 제40차 국제철도연맹(UIC) 아시아·태평양 지역총회를 개최해 8개국 철도기관 대표들과 철도 안전·협력 방안을 논의했다.",
+              "url": "https://www.klnews.co.kr/news/articleView.html?idxno=321649"
+            },
+            {
+              "rank": 4,
+              "title": "지역별 전기요금제 '딜레마'…서울지하철 안전·요금 모두 압박",
+              "outlet": "더팩트",
+              "summary_line": "정부가 추진하는 지역별 차등 전기요금제로 서울교통공사의 재정 부담이 커지면서 지하철 요금 인상과 안전 투자 압박이 동시에 우려되고 있다.",
+              "url": "https://news.tf.co.kr/read/life/2336280.htm"
+            },
+            {
+              "rank": 5,
+              "title": "코레일, 한국행정학회 혁신사례 경진대회 '우수상' 수상",
+              "outlet": "코레일(한국철도공사)",
+              "summary_line": "코레일이 'AI 가상센서를 활용한 전국 레일온도 예측체계'로 한국행정학회 혁신사례 경진대회에서 우수상을 수상했다.",
+              "url": "https://info.korail.com/info/selectBbsNttView.do?key=911&bbsNo=199&nttNo=26935"
+            },
+            {
+              "rank": 6,
+              "title": "국가철도공단, 코엑스 기술대전서 레이저 터널 굴착 등 차세대 철도 기술 공개",
+              "outlet": "서울경제",
+              "summary_line": "국가철도공단이 2026 국토교통기술대전에서 레이저 터널 굴착, BIM 기반 유지관리 등 차세대 철도 기술을 공개했다.",
+              "url": "https://www.sedaily.com/article/20059814"
+            },
+            {
+              "rank": 7,
+              "title": "철도연, 국민체감형 철도기술 전시",
+              "outlet": "건설기술신문",
+              "summary_line": "한국철도기술연구원이 2026 국토교통기술대전에서 철도종사자 인적오류 예방, 지하철 공기질 개선 등 국민체감형 철도기술 6건을 전시했다.",
+              "url": "https://www.ctman.kr/35884"
+            },
+            {
+              "rank": 8,
+              "title": "\"우리나라 기차야?\" 오송시험선에 나타난 낯선 전동차 [열차한컷]",
+              "outlet": "철도경제신문",
+              "summary_line": "우진산전이 약 3406억원 규모로 수주한 미국 LA메트로 노후 전동차 개량 사업의 차량이 오송시험선에 모습을 드러냈다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16938"
+            },
+            {
+              "rank": 9,
+              "title": "철도공단, '2026 국토교통기술대전' 참가…혁신 성과 공유·기술협력 강화",
+              "outlet": "철도경제신문",
+              "summary_line": "국가철도공단이 2026 국토교통기술대전에서 차세대 철도 연구 성과를 전시하고 중소·벤처기업과의 기술협력을 강화했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16941"
+            },
+            {
+              "rank": 10,
+              "title": "디지털 국토정보 기술, '2026 국토교통기술대전'서 공개",
+              "outlet": "국토매일",
+              "summary_line": "디지털 국토정보 기술개발 사업단이 2026 국토교통기술대전에서 실내외 연속측위, CCTV 이동객체 감지 등 공간정보 기술을 공개했다.",
+              "url": "http://pmnews.co.kr/123874"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-24",
       "count": 20,
       "page": "days/2026-06-24/index.html",
@@ -1445,5 +1604,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-24T20:14:02.453860+00:00"
+  "updated_at": "2026-06-25T20:17:57.417022+00:00"
 }
