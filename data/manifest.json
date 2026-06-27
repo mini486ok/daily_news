@@ -2,6 +2,123 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-27",
+      "count": 14,
+      "page": "days/2026-06-27/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "새 AI모델 GPT-5.6 공개한 오픈AI… 미국 정부 요청에 일부 기관만 우선 제공",
+              "outlet": "SBS뉴스",
+              "summary_line": "오픈AI가 차세대 추론 모델 'GPT-5.6'(솔·테라·루나)을 공개했지만 미국 정부 요청에 따라 일부 신뢰 기관에만 우선 제공하기로 했다.",
+              "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008630123"
+            },
+            {
+              "rank": 2,
+              "title": "미 정부, 앤트로픽 최상위 AI '미토스5' 일부 기업 한해 접근 허용",
+              "outlet": "한국일보",
+              "summary_line": "미국 정부가 국가안보를 이유로 차단했던 앤트로픽의 최상위 AI '미토스5'를 포춘 500대 기업 등 100여 개 미국 기관에 한해 다시 허용했다.",
+              "url": "https://www.hankookilbo.com/news/article/A2026062711170002651"
+            },
+            {
+              "rank": 3,
+              "title": "판 커지는 29일 靑 '1000조 프로젝트 보고회'…이재용·최태원도 '참석'",
+              "outlet": "머니투데이",
+              "summary_line": "이재용·최태원 회장이 참석하는 29일 청와대 '3대 메가프로젝트 보고회'에서 반도체·AI·데이터센터 분야 1000조원 규모의 투자계획이 발표될 전망이다.",
+              "url": "https://www.mt.co.kr/politics/2026/06/27/2026062711161392756"
+            },
+            {
+              "rank": 4,
+              "title": "오픈AI, GPT-5.6 출시…미국 정부 요청에 제한 배포",
+              "outlet": "ZDNet Korea",
+              "summary_line": "오픈AI가 GPT-5.6을 솔·테라·루나 3종으로 출시하며 '최대 추론 노력' 옵션과 '울트라 모드' 등 신기능과 역대 최강 보호장치를 도입했다고 밝혔다.",
+              "url": "https://zdnet.co.kr/view/?no=20260627102728"
+            },
+            {
+              "rank": 5,
+              "title": "온세미, 시냅틱스 인수... 차세대 피지컬 AI를 위한 교두보 확보",
+              "outlet": "인공지능신문",
+              "summary_line": "온세미가 시냅틱스를 약 70억 달러 전액 주식 거래로 인수하며 엣지 AI 역량을 확보해 피지컬 AI 전환의 교두보를 마련했다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40712"
+            },
+            {
+              "rank": 6,
+              "title": "엔비디아, 'GLM-5.2' 4비트 양자화 모델 공개...\"정확도 유지·용량 70%↓\"",
+              "outlet": "AI타임스",
+              "summary_line": "엔비디아가 지푸 AI의 오픈소스 LLM 'GLM-5.2'를 자체 NVFP4 4비트 양자화로 최적화해 용량을 70%가량 줄이면서도 성능을 유지한 모델을 공개했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212178"
+            },
+            {
+              "rank": 7,
+              "title": "'뇌' 신호로 로봇 제어하는 플랫폼 개발 나선 카이스트",
+              "outlet": "AI타임스",
+              "summary_line": "카이스트가 뇌 신호로 로봇을 제어하는 양방향 뇌-로봇 인터페이스 플랫폼 개발에 나서며 AI 기반 재활 혁신을 추진한다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212174"
+            },
+            {
+              "rank": 8,
+              "title": "AI로 '돌연심장사' 위험 예측 정확도 높였다…UC 버클리, 심전도에서 새로운 생체 신호 발견",
+              "outlet": "인공지능신문",
+              "summary_line": "UC 버클리 연구진이 44만여 건의 심전도로 학습한 AI로 기존 임상 방식보다 정확하게 돌연심장사 위험을 예측하는 데 성공했다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40716"
+            },
+            {
+              "rank": 9,
+              "title": "\"AI 블랙박스, 한계 넘는다\"...EPFL 연구진, 인간 뇌처럼 사고하는 AI 모델 'MiCRo' 개발",
+              "outlet": "인공지능신문",
+              "summary_line": "스위스 EPFL 연구진이 언어·논리·사회적 추론·세계지식 등 뇌 구조를 모방한 모듈형 AI 모델 'MiCRo'를 개발해 의사결정 과정의 투명성을 높였다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40717"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "코레일, 전동차 입찰 참여업체 대상 '청렴 브리핑' 시행",
+              "outlet": "국토교통뉴스",
+              "summary_line": "한국철도공사가 전동차 144칸 구매사업 입찰 참여업체를 대상으로 전관예우 근절과 공정계약 원칙을 직접 설명하는 '청렴 브리핑'을 새로 시행했다.",
+              "url": "https://www.guktonews.co.kr/6846"
+            },
+            {
+              "rank": 2,
+              "title": "우주항공산업 경쟁력 높인다…사천시, 광역교통망 구축 본격 행보",
+              "outlet": "한국철도일보",
+              "summary_line": "박동식 사천시장이 국회를 방문해 사천우주항공선의 국가철도망 반영 등 철도·공항·도로를 연계한 광역교통망 구축을 국가 전략으로 추진하겠다고 밝혔다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161349"
+            },
+            {
+              "rank": 3,
+              "title": "인천도시철도, 역사 활용한 생활밀착형 건강서비스 제공",
+              "outlet": "한국철도일보",
+              "summary_line": "인천교통공사가 인천1호선 부평구청역에서 '건강 원스톱 케어데이'를 열어 시민 약 100명에게 무료 의료·복지 서비스를 제공했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161348"
+            },
+            {
+              "rank": 4,
+              "title": "코레일 철도박물관 \"추억의 간식카트 만나보세요\"",
+              "outlet": "국토교통뉴스",
+              "summary_line": "코레일이 6월 28일부터 11월 29일까지 의왕 철도박물관에서 120여 년 철도 먹거리 문화를 다룬 '달리는 식탁, 기차 안 식문화' 기획전을 연다.",
+              "url": "https://www.guktonews.co.kr/6845"
+            },
+            {
+              "rank": 5,
+              "title": "초여름 날씨로 나들이객 증가…서울→부산 5시간40분",
+              "outlet": "뉴시스",
+              "summary_line": "초여름 나들이객 증가로 27일 토요일 전국 고속도로에 약 555만 대가 통행할 것으로 전망되며 강원권을 중심으로 정체가 두드러질 것으로 예상됐다.",
+              "url": "https://www.newsis.com/view/NISX20260627_0003685978"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-26",
       "count": 20,
       "page": "days/2026-06-26/index.html",
@@ -1763,5 +1880,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-26T20:08:34.192851+00:00"
+  "updated_at": "2026-06-27T20:31:49.173133+00:00"
 }
