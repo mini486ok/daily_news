@@ -2,6 +2,165 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-28",
+      "count": 20,
+      "page": "days/2026-06-28/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "K-AI 얼라이언스, 50개 멤버사로 확대…SK 글로벌 AI 플랫폼 본격화",
+              "outlet": "인공지능신문",
+              "summary_line": "SK가 주도하는 K-AI 얼라이언스가 7개사에서 50개 멤버사로 확대되며 'K-AI 얼라이언스 2.0'으로 전환해 글로벌 AI 풀스택 생태계 구축에 나섰다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40721"
+            },
+            {
+              "rank": 2,
+              "title": "LG전자, AI 시대 고객 맞춤형 주거 솔루션 사업 진출…LG 스마트코티지 B2B 20평대 신제품 출시",
+              "outlet": "인공지능신문",
+              "summary_line": "LG전자가 AI 가전·IoT·공조 기술을 통합한 모듈러 주택 'LG 스마트코티지' 20평대 B2B 신제품 2종을 출시하며 맞춤형 주거 솔루션 사업에 진출했다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40720"
+            },
+            {
+              "rank": 3,
+              "title": "\"AI는 왜 보고 들을 때 더 잘 배울까?\"…UNIST 윤성환 교수팀, 멀티모달 AI가 강건해지는 원리 수학적으로 규명",
+              "outlet": "인공지능신문",
+              "summary_line": "UNIST 윤성환 교수팀이 멀티모달 AI가 단일 모달리티보다 강건한 이유를 '손실 지형 평탄화'라는 수학적 원리로 규명했다.",
+              "url": "https://www.aitimes.kr/news/articleView.html?idxno=40719"
+            },
+            {
+              "rank": 4,
+              "title": "KAIST, AI의 '디지털 연령차별' 정량 분석…\"생성 AI의 은밀한 연령 편향\"",
+              "outlet": "AI타임스",
+              "summary_line": "KAIST 최문정 교수 연구팀이 GPT-4o에 내재된 연령 편향을 정량 분석해 고령층이 '따뜻하지만 역량은 낮은' 존재로 묘사되는 디지털 연령차별 경향을 확인했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212190"
+            },
+            {
+              "rank": 5,
+              "title": "딥시크, LLM 추론 속도 최대 85% 높이는 'D스파크' 오픈소스 공개",
+              "outlet": "AI타임스",
+              "summary_line": "딥시크가 추측형 디코딩 기술을 적용해 출력 품질을 유지하면서 응답 속도를 최대 85% 높이는 'D스파크'를 오픈소스로 공개했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212191"
+            },
+            {
+              "rank": 6,
+              "title": "MS, 깃허브 코파일럿에 자체 코딩 모델 출시…\"하이쿠보다 빠르고 저렴\"",
+              "outlet": "AI타임스",
+              "summary_line": "마이크로소프트가 자체 개발한 코딩 모델 'MAI-코드-1-플래시'를 깃허브 코파일럿에 정식 출시하며 클로드 하이쿠 대비 빠른 속도와 낮은 비용을 내세웠다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212192"
+            },
+            {
+              "rank": 7,
+              "title": "애플, 메모리 폭등에 '블랙리스트' 중국 CXMT 칩 구매 추진",
+              "outlet": "AI타임스",
+              "summary_line": "애플이 AI 데이터센터발 메모리 가격 폭등에 대응해 미국 블랙리스트에 오른 중국 CXMT 칩 구매 승인을 받기 위한 로비에 나섰다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212194"
+            },
+            {
+              "rank": 8,
+              "title": "에포크 AI, '장기 개발 능력' 벤치마크 공개…\"코드 암기론 통과 못해\"",
+              "outlet": "AI타임스",
+              "summary_line": "에포크 AI와 METR이 AI의 장기 소프트웨어 개발 능력을 평가하는 '미러코드' 벤치마크를 공개했으며 최고 성능 모델도 56% 성공률에 그쳤다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212195"
+            },
+            {
+              "rank": 9,
+              "title": "\"AI 전력 소비 1000분의 1로 줄인다\"…신형 AI 아키텍처 등장",
+              "outlet": "ZDNet코리아",
+              "summary_line": "데이터브릭스 출신 나빈 라오 CEO가 설립한 언컨벤셔널AI가 오실레이터 기반 컴퓨팅으로 AI 추론 전력을 최대 1000배 줄인다는 신형 아키텍처를 공개했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260628024529"
+            },
+            {
+              "rank": 10,
+              "title": "美 정부 AI 개입에 오픈AI·앤트로픽 전략 갈렸다",
+              "outlet": "ZDNet코리아",
+              "summary_line": "미국 정부의 AI 규제 요구에 오픈AI는 단계적 모델 공개로 수용한 반면 앤트로픽은 최신 모델 출시를 철회하며 상반된 전략을 택했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260628120509"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "SR, 철도의 날 맞아 EMU-320 담은 SRT 굿즈 16종 출시",
+              "outlet": "한국철도일보",
+              "summary_line": "SR이 6월 28일 철도의 날을 맞아 2027년 도입 예정인 차세대 고속열차 EMU-320을 모티브로 한 SRT 굿즈 16종을 출시했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161351"
+            },
+            {
+              "rank": 2,
+              "title": "서울시, 수색역 역세권에 고령층 맞춤형 안심주택 조성",
+              "outlet": "한국철도일보",
+              "summary_line": "서울시가 경의중앙선 수색역·디지털미디어시티역 인근 역세권에 돌봄·의료 시설을 갖춘 고령층 맞춤형 안심주택 696세대를 조성하기로 했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161350"
+            },
+            {
+              "rank": 3,
+              "title": "부산형 급행철도 등 '2차 도시철도망 계획' 국토부 승인",
+              "outlet": "국제신문",
+              "summary_line": "부산시가 가덕도신공항~오시리아를 잇는 부산형 급행철도(BuTX) 등 10개 노선 145.66㎞ 규모의 제2차 도시철도망 구축계획(2026~2035)에 대해 국토교통부 최종 승인을 받았다.",
+              "url": "https://v.daum.net/v/20260628194238587"
+            },
+            {
+              "rank": 4,
+              "title": "\"시속 1200㎞ 하이퍼튜브·AI 철도\" 속도·지능 경계 '극복' [2026 국토교통기술대전]",
+              "outlet": "에너지경제",
+              "summary_line": "2026 국토교통기술대전 세미나에서 한국철도기술연구원과 현대로템이 시속 1200㎞ 하이퍼튜브와 철도차량 전 생애주기에 적용하는 피지컬 AI 기술을 발표했다.",
+              "url": "https://v.daum.net/v/20260628090006972"
+            },
+            {
+              "rank": 5,
+              "title": "양주 7호선 도봉산~옥정 광역철도, 2029년 개통 전망",
+              "outlet": "국민일보",
+              "summary_line": "양주시장 당선자 인수위 점검 결과 7호선 도봉산~옥정 광역철도 개통이 당초 2027년 말에서 2029년으로 지연될 전망인 것으로 나타났다.",
+              "url": "https://v.daum.net/v/20260628162004882"
+            },
+            {
+              "rank": 6,
+              "title": "\"출근길부터 땀 뻘뻘\" 서울지하철 고장 에스컬레이터 몇주째 방치",
+              "outlet": "연합뉴스",
+              "summary_line": "예산 부족으로 서울 지하철의 고장 난 에스컬레이터 25대가 수주째 방치되고 있으며, 7호선 남성역은 6주째 멈춰 있는 것으로 나타났다.",
+              "url": "https://v.daum.net/v/20260628065654021"
+            },
+            {
+              "rank": 7,
+              "title": "지하철 8호선 의정부 연장, 이번엔 포함될까",
+              "outlet": "연합뉴스",
+              "summary_line": "의정부시가 별내별가람역~의정부역 약 15㎞를 잇는 지하철 8호선 연장을 제5차 광역교통 시행계획에 반영하기 위해 세 번째 도전에 나섰다.",
+              "url": "https://v.daum.net/v/20260628080254130"
+            },
+            {
+              "rank": 8,
+              "title": "생활권에 머문 저상버스, 광역으로 확대…교통약자 이동권 넓어질까",
+              "outlet": "쿠키뉴스",
+              "summary_line": "국토교통부가 자동차 전용도로 주행이 가능한 저상 좌석버스 표준모델 개발을 추진해 교통약자의 광역 이동권을 넓히는 사업에 나섰다.",
+              "url": "https://v.daum.net/v/20260628060305679"
+            },
+            {
+              "rank": 9,
+              "title": "창립 45주년 정용식 TS 이사장 \"AI로 교통안전 패러다임 바꿀 것\"",
+              "outlet": "뉴스1",
+              "summary_line": "한국교통안전공단 정용식 이사장이 창립 45주년을 맞아 AI 사고예방 시스템 'K-Safer' 등 인공지능 기반 교통안전 혁신을 본격 추진하겠다고 밝혔다.",
+              "url": "https://v.daum.net/v/20260628070205107"
+            },
+            {
+              "rank": 10,
+              "title": "'즉각 시행'이라더니…대중교통 무임승차 공약 '후퇴'",
+              "outlet": "TBC",
+              "summary_line": "추경호 대구시장 당선인이 도시철도·시내버스 무임승차 확대를 '즉각 시행'하겠다던 공약을 재정 부담을 이유로 도시철도 내년 7월, 시내버스 2028년 1월 시행으로 수정했다.",
+              "url": "https://v.daum.net/v/20260628205602564"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-27",
       "count": 14,
       "page": "days/2026-06-27/index.html",
@@ -1880,5 +2039,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-27T20:31:49.173133+00:00"
+  "updated_at": "2026-06-28T20:13:56.356609+00:00"
 }
