@@ -2,6 +2,158 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-29",
+      "count": 19,
+      "page": "days/2026-06-29/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "'4755조원' 삼성·SK, 국가예산의 6.5배 투자...李 \"초격차\", 崔 \"AI 미래 韓에서\"",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "이재명 정부의 '3대 메가프로젝트 국민보고회'에서 삼성·SK가 2035년까지 합산 4755조원 규모의 AI·반도체 투자 계획을 발표했다.",
+              "url": "https://www.fnnews.com/news/202606291705529918"
+            },
+            {
+              "rank": 2,
+              "title": "정부, AI데이터센터 국가전략 산업화…배경훈 \"2035년까지 1000조 이상 투자\"",
+              "outlet": "뉴시스",
+              "summary_line": "배경훈 부총리가 2029년까지 8.4GW, 2035년까지 총 18.4GW 규모의 AI 데이터센터에 1000조원 이상을 투자해 AIDC를 국가전략산업으로 키우겠다고 밝혔다.",
+              "url": "https://www.newsis.com/view/NISX20260629_0003687949"
+            },
+            {
+              "rank": 3,
+              "title": "정부, 제조AI 2030 전략 발표...20조 투자로 100조 경제 효과",
+              "outlet": "아주경제",
+              "summary_line": "산업통상부가 2030년까지 민·관 합동 20조원을 투자해 제조업 부가가치 100조원 이상을 창출하는 '제조AI 2030(M.AX) 전략'을 발표했다.",
+              "url": "https://www.ajunews.com/view/20260629130813704"
+            },
+            {
+              "rank": 4,
+              "title": "삼성, 2655조 '초대형 베팅'…광주 '반도체'·해남 'AI'·구미 '로봇'",
+              "outlet": "전자신문",
+              "summary_line": "삼성그룹이 AI 시대를 겨냥해 광주 반도체, 해남 AI 데이터센터, 구미 휴머노이드 로봇 등 지역별로 특화된 총 2655조원 규모의 국내 투자 계획을 발표했다.",
+              "url": "https://www.etnews.com/20260629000416"
+            },
+            {
+              "rank": 5,
+              "title": "국산 NPU, 구호에서 실물로…AI반도체 판이 바뀐다",
+              "outlet": "아시아경제",
+              "summary_line": "퓨리오사AI·리벨리온 등 국산 AI 반도체 기업들이 시제품을 넘어 NPU 양산·공급 단계로 진입하며 'AI 반도체 실물화' 국면에 들어섰다.",
+              "url": "https://view.asiae.co.kr/article/2026062915173519601"
+            },
+            {
+              "rank": 6,
+              "title": "챗GPT 독주 끝났나…3강 구도로 재편",
+              "outlet": "아시아경제",
+              "summary_line": "마인드로직 '팩트챗' 이용 데이터 분석 결과 GPT 점유율이 급락하고 클로드가 처음으로 GPT를 추월하는 등 생성형 AI 시장이 3강 구도로 재편된 것으로 나타났다.",
+              "url": "https://www.asiae.co.kr/article/2026062910160026692"
+            },
+            {
+              "rank": 7,
+              "title": "위로보틱스, 휴머노이드 '알렉스(ALLEX)' 시뮬레이션 모델 공개",
+              "outlet": "디지털데일리",
+              "summary_line": "위로보틱스가 피지컬 AI 개발 생태계 구축을 위해 휴머노이드 로봇 '알렉스(ALLEX)'의 시뮬레이션 모델을 공개하며 기술 공개 로드맵의 첫발을 뗐다.",
+              "url": "https://www.ddaily.co.kr/page/view/2026062909455313906"
+            },
+            {
+              "rank": 8,
+              "title": "한컴, 한국서부발전 AX 이끈다…전력그룹사 첫 'AI 문서혁신'",
+              "outlet": "ZDNet Korea",
+              "summary_line": "한컴이 한국서부발전의 생성형 AI 챗봇 '위피봇'에 '한컴어시스턴트'를 연계해 전력그룹사 최초의 전사 AI 문서작성 환경을 구축했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260629095457"
+            },
+            {
+              "rank": 9,
+              "title": "마크비전, AI 에이전트 출시…위조품 탐지 넘어 시장분석까지",
+              "outlet": "한국경제",
+              "summary_line": "IP 보호 기업 마크비전이 브랜드 데이터를 자연어로 분석해주는 AI '브랜드 인텔리전스 에이전트'를 출시하며 위조품 탐지를 넘어 시장 분석 영역으로 사업을 확장했다.",
+              "url": "https://www.hankyung.com/article/202606293532i"
+            },
+            {
+              "rank": 10,
+              "title": "LG AI연구원, AI 생애주기 전 과정 'ISO 27001' 인증",
+              "outlet": "ZDNet Korea",
+              "summary_line": "LG AI연구원이 LLM 기획부터 데이터 처리·학습, 서비스 개발·운영까지 AI 생애주기 전 과정에 대해 정보보호 국제표준 'ISO 27001' 인증을 획득했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260629090118"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "퇴직자 감점 확대·수의계약 제한 강화…철도 전관예우 근절 '속도'",
+              "outlet": "머니투데이",
+              "summary_line": "국토교통부가 코레일·국가철도공단·철도기술연구원·SR 등 4개 철도기관의 전관예우 근절 대책 추진 상황을 총괄 점검하고 추가 개선 방안을 논의했다.",
+              "url": "https://www.mt.co.kr/estate/2026/06/29/2026062909271879416"
+            },
+            {
+              "rank": 2,
+              "title": "탄소 줄이는 철도 침목 나온다… 인천교통공사, 친환경 RC침목 실용화 착수",
+              "outlet": "한국철도일보",
+              "summary_line": "인천교통공사가 한국철도기술연구원·태명실업과 시멘트 사용량을 85% 줄인 친환경 RC침목 실용화를 위한 업무협약을 체결했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161919"
+            },
+            {
+              "rank": 3,
+              "title": "'7억 번의 선택'… 대전도시철도 1호선이 만든 20년 기록",
+              "outlet": "한국철도일보",
+              "summary_line": "2006년 개통한 대전도시철도 1호선이 누적 이용객 7억 명을 돌파하며 20년간 무사고 운행 기록을 세웠다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161917"
+            },
+            {
+              "rank": 4,
+              "title": "최대 70% 할인에 QR 하나면 끝… 경북 산림관광 '놀숲패스' 출시",
+              "outlet": "한국철도일보",
+              "summary_line": "코레일관광개발이 경북 4개 시·군과 함께 모바일 QR 기반 체류형 산림관광 상품 '2026 놀숲패스'를 7월 1일부터 출시한다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161920"
+            },
+            {
+              "rank": 5,
+              "title": "철도산업協, 영상 공모전 2회째 성황…AI·드론·단편영화로 담은 철도",
+              "outlet": "철도경제신문",
+              "summary_line": "한국철도산업협회가 주관한 제2회 '철도를 담다' 영상 공모전에 총 52편이 접수돼 AI·드론·단편영화 등 다양한 기법의 작품이 선정됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16961"
+            },
+            {
+              "rank": 6,
+              "title": "\"청렴은 선언이 아닌 실천\"… 광주교통공사, 현장 중심 반부패 강화",
+              "outlet": "한국철도일보",
+              "summary_line": "광주교통공사가 사장 주재 반부패 추진 점검회의를 열고 인사·예산·계약 등 5대 분야 중심의 현장형 청렴 대책을 논의했다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161918"
+            },
+            {
+              "rank": 7,
+              "title": "[기고] KTX 시대의 일반철도, 해답은 '철도물류 중심' 정책 전환",
+              "outlet": "철도경제신문",
+              "summary_line": "고속철도가 여객을, 기존 일반철도가 화물을 담당하도록 역할을 재편해 국가 물류경쟁력과 탄소 저감을 동시에 달성하자는 정책 전환을 제언했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16943"
+            },
+            {
+              "rank": 8,
+              "title": "사선(死線) 뚫고 달린 기차… 잊혀선 안 될 '철도 영웅'들",
+              "outlet": "철도경제신문",
+              "summary_line": "6·25전쟁 당시 군수물자 수송 임무를 수행하다 순직한 철도 기관사 등 287명의 '철도 영웅'을 재조명했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16962"
+            },
+            {
+              "rank": 9,
+              "title": "'21년의 추억, 함께 달리는 행복' 정선레일바이크 21주년 행사",
+              "outlet": "한국철도일보",
+              "summary_line": "코레일관광개발이 7월 5일 구절리역에서 정선레일바이크 개통 21주년 기념 문화 행사를 연다.",
+              "url": "https://www.korearailroad.kr/news/articleView.html?idxno=161619"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-28",
       "count": 20,
       "page": "days/2026-06-28/index.html",
@@ -2039,5 +2191,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-28T20:24:05.440087+00:00"
+  "updated_at": "2026-06-30T00:06:44.624212+00:00"
 }
