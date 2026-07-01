@@ -2,6 +2,158 @@
   "site": "Daily News",
   "days": [
     {
+      "date": "2026-06-30",
+      "count": 19,
+      "page": "days/2026-06-30/index.html",
+      "topics": [
+        {
+          "key": "ai",
+          "label": "AI(인공지능)",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "정부 AI 데이터센터 1000조 투자 계획...산업계 환영 속 환경 관리 과제 부상",
+              "outlet": "ZDNet Korea",
+              "summary_line": "정부가 2035년까지 18.4GW 규모 AI 데이터센터에 1000조원 이상을 투입하는 계획을 내놓자 산업계는 환영했지만 환경단체는 재생에너지 의무화 등 관리 원칙 부재를 지적했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260630112325"
+            },
+            {
+              "rank": 2,
+              "title": "AI G3 이끌 싱크탱크 첫발…NIA '인공지능정책센터' 출범",
+              "outlet": "ZDNet Korea",
+              "summary_line": "한국지능정보사회진흥원(NIA)이 국가 AI 정책 개발과 법·제도 연구를 전담하는 정부 지정 싱크탱크 '인공지능정책센터'를 공식 출범했다.",
+              "url": "https://zdnet.co.kr/view/?no=20260630175559"
+            },
+            {
+              "rank": 3,
+              "title": "반도체 특별법 시행·AI 지원 확대…하반기 경제 이렇게 바뀐다 [종합]",
+              "outlet": "이투데이",
+              "summary_line": "하반기부터 반도체 특별법 시행과 함께 AI 전용 심사트랙 신설, 제조업 AI 대전환(M.AX) 추진 등 AI 산업 육성 정책이 본격 가동된다.",
+              "url": "https://www.etoday.co.kr/news/view/2598707"
+            },
+            {
+              "rank": 4,
+              "title": "AI발 위협에 보안업계 뭉쳤다…KISIA, 'AI 보안 인텔리전스 협의체' 회의",
+              "outlet": "이투데이",
+              "summary_line": "한국정보보호산업협회(KISIA)가 AI 보안 위협에 대응하기 위한 'AI 보안 인텔리전스 협의체' 회의를 열고 소버린 AI 보안 모델 개발 등을 논의했다.",
+              "url": "https://www.etoday.co.kr/news/view/2598845"
+            },
+            {
+              "rank": 5,
+              "title": "'호남 AI 클러스터' 뜨자, 냉각 기업도 움직인다...오텍캐리어 액체냉각으로 승부",
+              "outlet": "아주경제",
+              "summary_line": "광주 AI 데이터센터 클러스터 조성이 국가 전략과제로 부상하면서 오텍캐리어가 직접 액체냉각(DLC) 등 차세대 냉각 솔루션 사업을 확대하고 있다.",
+              "url": "https://www.ajunews.com/view/20260630095326200"
+            },
+            {
+              "rank": 6,
+              "title": "메타, 뇌 신호 해독 '브레인투쿼티 v2' 공개…\"비침습 BCI 성능 한계 넘어\"",
+              "outlet": "AI타임스",
+              "summary_line": "메타가 뇌에 전극을 삽입하지 않고 MEG 신호만으로 생각을 텍스트로 변환하는 비침습 뇌-컴퓨터 인터페이스 '브레인투쿼티 v2'를 공개했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212282"
+            },
+            {
+              "rank": 7,
+              "title": "구글, '제미나이' 개인화 이미지 생성 기능 무료 개방…미국부터 적용",
+              "outlet": "AI타임스",
+              "summary_line": "구글이 지메일·구글포토 등 개인 데이터를 활용하는 제미나이의 맞춤형 이미지 생성 기능을 미국 무료 사용자에게 개방했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212279"
+            },
+            {
+              "rank": 8,
+              "title": "바이브컴퍼니, '에이전트 플랫폼' 출시…\"업무별 맞춤형 AI 모델 조합\"",
+              "outlet": "AI타임스",
+              "summary_line": "바이브컴퍼니가 단일 플랫폼에서 업무별로 다른 AI 모델을 조합해 맞춤형 에이전트를 구축·운영할 수 있는 'VAIV 에이전트 플랫폼'을 출시했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212287"
+            },
+            {
+              "rank": 9,
+              "title": "메타, '클로드·코덱스' 사내 사용 제한…\"AI 증류 우려 사전 차단\"",
+              "outlet": "AI타임스",
+              "summary_line": "메타가 앤트로픽 '클로드 코드'와 오픈AI '코덱스' 등 외부 AI 코딩 도구의 사내 사용을 제한하며 AI 증류 논란을 사전 차단하고 나섰다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212263"
+            },
+            {
+              "rank": 10,
+              "title": "커서, iOS 모바일 앱 출시...스마트폰으로 AI 코딩 에이전트 실시간 제어",
+              "outlet": "AI타임스",
+              "summary_line": "AI 코딩 플랫폼 커서가 iOS 앱을 공개 베타로 출시해 스마트폰에서 AI 코딩 에이전트를 실시간 제어할 수 있게 했다.",
+              "url": "https://www.aitimes.com/news/articleView.html?idxno=212262"
+            }
+          ]
+        },
+        {
+          "key": "transit",
+          "label": "철도·대중교통",
+          "articles": [
+            {
+              "rank": 1,
+              "title": "코레일 자회사 5개→3개 통합…\"운영 효율화\"",
+              "outlet": "경향신문",
+              "summary_line": "정부가 제8차 공공기관운영위원회에서 코레일 자회사 5곳을 고객서비스·유통물류·유지관리 3개 전문회사로 통합하는 개편안을 의결했다.",
+              "url": "https://www.khan.co.kr/article/202606301828011"
+            },
+            {
+              "rank": 2,
+              "title": "\"'통합=효율', 등식 속에 함정 있어\" [2026 고속철도 거버넌스]",
+              "outlet": "철도경제신문",
+              "summary_line": "고속철도 통합을 '효율'로 정당화하는 논리에는 경쟁이라는 견제 기능을 간과하는 함정이 있다고 전문가가 지적했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16979"
+            },
+            {
+              "rank": 3,
+              "title": "SRT 부정승차 집중단속…수서-오송 구간 기동검표단 투입",
+              "outlet": "철도경제신문",
+              "summary_line": "SR이 7월 1일부터 무임승차 근절을 위해 수서~오송 전 구간으로 단속을 확대하고 4인 1조 기동검표단을 투입한다고 밝혔다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16980"
+            },
+            {
+              "rank": 4,
+              "title": "철도공단, 호남선 논산 관촉건널목 지하차도 개통",
+              "outlet": "철도경제신문",
+              "summary_line": "국가철도공단이 호남선 논산 관촉건널목을 입체화한 지하차도를 완공해 건널목 사고 위험과 차량 정체를 해소했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16981"
+            },
+            {
+              "rank": 5,
+              "title": "도심 한복판, 지하 깊은 곳, 선로 옆 공사…'AI·스마트 기술'로 사고 예방 [철도건설기술세미나]",
+              "outlet": "철도경제신문",
+              "summary_line": "2026 철도건설기술세미나에서 AI·디지털 트윈 등 스마트 기술로 철도 인프라 공사의 안전을 '사고 대응'에서 '사고 예방'으로 전환하는 방안이 논의됐다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16982"
+            },
+            {
+              "rank": 6,
+              "title": "영국 철도 당국, AI 안전 도입 위한 6대 로드맵 발표",
+              "outlet": "철도경제신문",
+              "summary_line": "영국 철도·도로 사무국(ORR)이 AI를 안전·경제 규제 틀 안에서 투명하게 운용하기 위한 6대 로드맵을 발표했다.",
+              "url": "https://www.redaily.co.kr/news/articleView.html?idxno=16977"
+            },
+            {
+              "rank": 7,
+              "title": "서울 지하철 직원들, 5년간 심정지 승객 171명 살려…응급처치 교육 성과",
+              "outlet": "뉴스핌",
+              "summary_line": "서울교통공사는 최근 5년간 지하철에서 심정지로 쓰러진 승객 171명을 직원들의 신속한 응급처치로 살렸다고 밝혔다.",
+              "url": "https://www.newspim.com/news/view/20260630000758"
+            },
+            {
+              "rank": 8,
+              "title": "인천교통공사, 지방공기업 안전활동 수준평가서 'A등급'",
+              "outlet": "뉴시스",
+              "summary_line": "인천교통공사가 지방공기업 안전활동 수준평가에서 전국 도시철도 운영기관 중 유일하게 A등급(우수)을 획득했다.",
+              "url": "https://www.newsis.com/view/NISX20260630_0003689181"
+            },
+            {
+              "rank": 9,
+              "title": "다자녀가구도 고속도로 통행료 감면…KTX·SRT 예매 한 앱으로[하반기 달라지는 것]",
+              "outlet": "파이낸셜뉴스",
+              "summary_line": "정부가 8월부터 KTX와 SRT를 하나의 앱에서 예매할 수 있게 하고, 10월부터 철도 승차권 예매 기간을 출발 2개월 전으로 확대한다고 밝혔다.",
+              "url": "https://www.fnnews.com/news/202606301006539762"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-06-29",
       "count": 19,
       "page": "days/2026-06-29/index.html",
@@ -2191,5 +2343,5 @@
       ]
     }
   ],
-  "updated_at": "2026-06-30T00:06:44.624212+00:00"
+  "updated_at": "2026-07-01T01:11:53.932368+00:00"
 }
