@@ -104,7 +104,7 @@ def cmd_build(args):
 
     # 오디오북(NotebookLM 등) 소스 텍스트: 그날 기사 전체를 한 파일로 묶음.
     # NotebookLM에 이 파일 하나를 소스로 올려 오디오 개요(Audio Overview)를 생성하고,
-    # 결과 파일을 days/<date>/audio.m4a 로 저장하면 상세 페이지에 플레이어가 자동 표시된다.
+    # 결과 파일을 days/<date>/daily-news-<date>.m4a 로 저장하면 상세 페이지에 플레이어가 자동 표시된다.
     lines = [f"# {date} Daily News 브리핑",
              "", f"{date}에 국내 언론에 보도된 AI(인공지능)·철도/대중교통 분야 주요 기사 요약입니다.", ""]
     for t in data.get("topics", []):

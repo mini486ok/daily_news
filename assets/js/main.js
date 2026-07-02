@@ -486,11 +486,14 @@
     });
   }
 
-  // days/<date>/audio.(m4a|mp3|wav) 가 존재하면 오디오 브리핑 카드 표시
+  // days/<date>/daily-news-<date>.(m4a|mp3|wav) 가 존재하면 오디오 브리핑 카드 표시
   function setupAudioBrief() {
     const holder = document.getElementById("audioBrief");
     if (!holder) return;
-    const candidates = ["audio.m4a", "audio.mp3", "audio.wav"];
+    const dt = detailDate();
+    const candidates = [];
+    if (dt) ["m4a", "mp3", "wav"].forEach((ext) => candidates.push(`daily-news-${dt}.${ext}`));
+    ["audio.m4a", "audio.mp3", "audio.wav"].forEach((n) => candidates.push(n)); // 구명명 호환
     (async () => {
       for (const name of candidates) {
         try {
@@ -504,7 +507,7 @@
                   <div class="ab-desc">이 날짜의 기사 전체를 음성으로 정리한 오디오북입니다.</div>
                   <audio controls preload="none" src="${name}"></audio>
                 </div>
-                <a class="btn ab-down" href="${name}" download="daily-news-${esc(detailDate() || "audio")}.${name.split(".").pop()}">⬇ 저장</a>
+                <a class="btn ab-down" href="${name}" download="${esc(name)}">⬇ 저장</a>
               </div>`;
             holder.style.display = "";
             return;
