@@ -119,6 +119,21 @@ def cmd_build(args):
     (day_dir / "audio_source.md").write_text("\n".join(lines), encoding="utf-8")
     log(f"오디오 소스 텍스트 생성 → {day_dir / 'audio_source.md'}")
 
+    # 오디오 개요(Audio Overview) 생성용 표준 프롬프트: 두 분야 2부 구성으로
+    # 당일 선정된 모든 기사를 빠짐없이 충분히 소개하도록 지시(주제·건수는 그날 데이터 기준).
+    parts = [f"{i+1}부는 {t.get('label','')} 분야(기사 {len(t.get('articles', []))}건)"
+             for i, t in enumerate(data.get("topics", []))]
+    prompt = (
+        "반드시 한국어로만 진행하는 팟캐스트입니다. "
+        f"소스는 {date} 하루 동안 국내 언론에 보도된 분야별 주요 뉴스 브리핑입니다. "
+        f"방송을 큰 틀에서 {len(parts)}부로 나누세요: {', '.join(parts)}. "
+        "각 부에서는 해당 분야에 포함된 모든 기사를 단 한 건도 빠뜨리지 말고 소스에 실린 순서대로 다루되, "
+        "기사마다 제목·핵심 내용·시사점을 충분히 소개하세요. "
+        "특정 기사 몇 개만 골라 다루는 것은 금지합니다. 가능한 한 길고 상세하게 만들어 주세요."
+    )
+    (day_dir / "audio_prompt.txt").write_text(prompt, encoding="utf-8")
+    log(f"오디오 프롬프트 생성 → {day_dir / 'audio_prompt.txt'}")
+
 
 def cmd_date(args):
     """게시·검색 기준 날짜를 출력. 인자가 있으면 그대로, 없으면 어제(오늘 KST-1일)."""
