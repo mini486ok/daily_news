@@ -342,8 +342,9 @@ main { padding: 28px 0 80px; }
 }
 .card-share:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-/* ---------- 상세 페이지: 공유 버튼 ---------- */
-.btn.share-btn::before { content: "🔗"; margin-right: 6px; font-size: .85em; }
+/* ---------- 상세 페이지: 공유 버튼(원문/인포그래픽) ---------- */
+.btn.share-btn[data-share="link"]::before { content: "🔗"; margin-right: 6px; font-size: .85em; }
+.btn.share-btn[data-share="image"]::before { content: "🖼️"; margin-right: 6px; font-size: .85em; }
 
 /* ---------- 오디오 브리핑 카드 ---------- */
 #audioBrief:empty { display: none; }

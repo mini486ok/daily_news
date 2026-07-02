@@ -62,26 +62,46 @@
       document.body.removeChild(ta);
     });
   }
-  // 공유 구성: 기사 원문 링크가 맨 먼저, 그 아래 제목·언론사, 이미지(인포그래픽)는 첨부로.
-  // 이미지+텍스트 공유 시도 → 링크 공유 → 링크 복사 순으로 폴백
-  async function shareArticle(opt) {
+  // 원문 공유: 기사 원문 링크 + 제목·요약 텍스트 (이미지 없음)
+  // 폴백: 공유시트 미지원(PC) 시 링크+내용 클립보드 복사
+  async function shareLink(opt) {
     const link = opt.origUrl || opt.url; // 기사 원문 우선(없으면 브리핑 페이지)
-    const body = [link, opt.text || opt.title].filter(Boolean).join("\n\n");
-    if (opt.imgUrl && navigator.share && navigator.canShare) {
-      try {
-        const blob = await fetch(opt.imgUrl).then((r) => (r.ok ? r.blob() : Promise.reject()));
-        const file = new File([blob], (opt.imgName || "infographic") + ".png", { type: blob.type || "image/png" });
-        const withFile = { files: [file], title: opt.title, text: body };
-        if (navigator.canShare(withFile)) { await navigator.share(withFile); return; }
-      } catch (e) { if (e && e.name === "AbortError") return; /* 파일 공유 불가 → 링크 공유로 */ }
-    }
     if (navigator.share) {
       try { await navigator.share({ title: opt.title, text: opt.text || opt.title, url: link }); return; }
       catch (e) { if (e && e.name === "AbortError") return; }
     }
-    try { await copyText(body); toast("원문 링크와 내용을 복사했습니다. 카카오톡 등에 붙여넣어 공유하세요."); }
-    catch (e) { toast("공유를 지원하지 않는 환경입니다."); }
+    try {
+      await copyText([link, opt.text || opt.title].filter(Boolean).join("\n\n"));
+      toast("원문 링크와 내용을 복사했습니다. 카카오톡 등에 붙여넣어 공유하세요.");
+    } catch (e) { toast("공유를 지원하지 않는 환경입니다."); }
   }
+
+  // 인포그래픽 공유: 칠판 인포그래픽 이미지 파일 + 제목
+  // 폴백: 이미지 클립보드 복사 → 그것도 안 되면 이미지 다운로드
+  async function shareImage(opt) {
+    if (!opt.imgUrl) { toast("공유할 인포그래픽이 없습니다."); return; }
+    let blob;
+    try { blob = await fetch(opt.imgUrl).then((r) => (r.ok ? r.blob() : Promise.reject())); }
+    catch (e) { toast("인포그래픽 이미지를 불러오지 못했습니다."); return; }
+    const file = new File([blob], (opt.imgName || "infographic") + ".png", { type: blob.type || "image/png" });
+    if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+      try { await navigator.share({ files: [file], title: opt.title, text: opt.title }); return; }
+      catch (e) { if (e && e.name === "AbortError") return; }
+    }
+    try {
+      await navigator.clipboard.write([new ClipboardItem({ [blob.type || "image/png"]: blob })]);
+      toast("인포그래픽 이미지를 복사했습니다. 카카오톡 등에 붙여넣어 공유하세요.");
+    } catch (e) {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = file.name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      toast("이미지 공유를 지원하지 않아 파일로 저장했습니다.");
+    }
+  }
+
+  function shareArticle(opt) { return opt.mode === "image" ? shareImage(opt) : shareLink(opt); }
 
   /* =======================================================================
      메인(아카이브) 페이지 — 월 → 날짜 2단 구조
@@ -240,10 +260,15 @@
         ${a.summary_line ? `<div class="card-summary">${esc(a.summary_line)}</div>` : ""}
         <div class="card-foot">
           <span class="org">📰 ${esc(a.outlet || "언론사 미상")}</span>
-          <button class="card-share" title="공유" aria-label="공유"
+          <button class="card-share" data-mode="link" title="원문 공유" aria-label="원문 공유"
             data-title="${esc(a.title)}" data-text="${esc(a.summary_line || a.title)}"
             data-url="${href}" data-orig="${esc(a.url || "")}" data-img="${img}">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.6 6.8-3.9M8.6 13.4l6.8 3.9"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </button>
+          <button class="card-share" data-mode="image" title="인포그래픽 공유" aria-label="인포그래픽 공유"
+            data-title="${esc(a.title)}" data-text="${esc(a.summary_line || a.title)}"
+            data-url="${href}" data-orig="${esc(a.url || "")}" data-img="${img}">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
           </button>
         </div>
       </div>
@@ -259,6 +284,7 @@
       e.stopPropagation();
       const abs = (p) => new URL(p, location.href).href;
       shareArticle({
+        mode: btn.getAttribute("data-mode") || "link",
         title: btn.getAttribute("data-title"),
         text: btn.getAttribute("data-text"),
         url: abs(btn.getAttribute("data-url")),
@@ -436,24 +462,25 @@
     return m ? m[1] : null;
   }
 
-  // 각 기사(.paper)의 공유 버튼: DOM에서 제목·이미지·앵커를 추출해 공유
+  // 각 기사(.paper)의 공유 버튼(원문/인포그래픽): DOM에서 제목·이미지·앵커를 추출해 공유
   function wireDetailShare() {
     document.querySelectorAll(".paper").forEach((paper) => {
-      const btn = paper.querySelector(".share-btn");
-      if (!btn) return;
-      btn.addEventListener("click", function () {
-        const title = (paper.querySelector("h3") || {}).textContent || document.title;
-        const org = (paper.querySelector(".meta .org") || {}).textContent || "";
-        const img = paper.querySelector(".paper-figure img");
-        const orig = paper.querySelector(".links a.primary"); // 기사 원문 보기 버튼
-        const url = location.origin + location.pathname + "#" + paper.id;
-        shareArticle({
-          title: title.trim(),
-          text: [title.trim(), org.trim()].filter(Boolean).join(" · "),
-          url,
-          origUrl: orig ? orig.href : "",
-          imgUrl: img ? img.currentSrc || img.src : "",
-          imgName: title.trim().slice(0, 40),
+      paper.querySelectorAll(".share-btn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const title = (paper.querySelector("h3") || {}).textContent || document.title;
+          const org = (paper.querySelector(".meta .org") || {}).textContent || "";
+          const img = paper.querySelector(".paper-figure img");
+          const orig = paper.querySelector(".links a.primary"); // 기사 원문 보기 버튼
+          const url = location.origin + location.pathname + "#" + paper.id;
+          shareArticle({
+            mode: btn.getAttribute("data-share") || "link",
+            title: title.trim(),
+            text: [title.trim(), org.trim()].filter(Boolean).join(" · "),
+            url,
+            origUrl: orig ? orig.href : "",
+            imgUrl: img ? img.currentSrc || img.src : "",
+            imgName: title.trim().slice(0, 40),
+          });
         });
       });
     });
