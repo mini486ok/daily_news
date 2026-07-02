@@ -299,3 +299,98 @@ main { padding: 28px 0 80px; }
 @media (max-width: 480px) {
   .grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================================
+   2026-07 고도화: 월별 그룹 · 공유 · 오디오 브리핑 · 라이트박스 · 토스트
+   ========================================================================= */
+
+/* ---------- 월 칩(개수 뱃지) ---------- */
+.chip .chip-sub { font-size: .72rem; opacity: .65; font-weight: 600; margin-left: 2px; }
+
+/* ---------- 월 아코디언(전체 보기) ---------- */
+.month-section { margin-bottom: 26px; }
+.month-section > .month-head {
+  display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+  cursor: pointer; user-select: none;
+  padding: 14px 18px; margin: 8px 0 14px; border-radius: var(--radius-sm);
+  background: var(--bg-elev); border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.month-section > .month-head:hover { border-color: var(--accent); }
+.month-head h2 {
+  font-size: 1.3rem; margin: 0; font-weight: 800; letter-spacing: -.01em;
+  background: var(--accent-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.month-head .count { color: var(--text-mute); font-weight: 600; font-size: .88rem; }
+.month-head .toggle { flex: none; width: 16px; color: var(--text-mute); font-size: .9rem; font-weight: 800;
+  transition: transform .18s ease; }
+.month-section.collapsed > .month-head .toggle { transform: rotate(-90deg); }
+.month-section.collapsed > .month-body { display: none; }
+.month-body { padding-left: 6px; }
+
+/* ---------- 카드: 주제별 상단 컬러 + 푸터(언론사·공유) ---------- */
+.card.t-ai::before { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+.card.t-transit::before { background: linear-gradient(135deg, #0ea5e9, #10b981); }
+.card .card-foot { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 2px; }
+.card .card-foot .org { margin-top: 0; flex: 1; min-width: 0; }
+.card-share {
+  flex: none; width: 32px; height: 32px; border-radius: 9px;
+  border: 1px solid var(--border); background: var(--bg-soft); color: var(--text-mute);
+  cursor: pointer; display: grid; place-items: center;
+  transition: all .15s ease;
+}
+.card-share:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+/* ---------- 상세 페이지: 공유 버튼 ---------- */
+.btn.share-btn::before { content: "🔗"; margin-right: 6px; font-size: .85em; }
+
+/* ---------- 오디오 브리핑 카드 ---------- */
+#audioBrief:empty { display: none; }
+.audio-brief {
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 20px 24px; margin: 24px 0 6px;
+  border-left: 5px solid var(--accent);
+}
+.audio-brief .ab-icon { font-size: 2rem; flex: none; }
+.audio-brief .ab-body { flex: 1; min-width: 240px; }
+.audio-brief .ab-title { font-weight: 800; font-size: 1.05rem; }
+.audio-brief .ab-desc { color: var(--text-soft); font-size: .86rem; margin: 2px 0 10px; }
+.audio-brief audio { width: 100%; max-width: 560px; height: 40px; }
+.audio-brief .ab-down { flex: none; }
+
+/* ---------- 라이트박스(인포그래픽 확대) ---------- */
+.lightbox {
+  position: fixed; inset: 0; z-index: 100; display: grid; place-items: center;
+  background: rgba(8, 12, 24, .88); backdrop-filter: blur(4px);
+  opacity: 0; pointer-events: none; transition: opacity .18s ease;
+  cursor: zoom-out; padding: 4vh 3vw;
+}
+.lightbox.show { opacity: 1; pointer-events: auto; }
+.lightbox img {
+  max-width: 94vw; max-height: 92vh; width: auto; height: auto;
+  border-radius: 12px; box-shadow: 0 24px 80px rgba(0, 0, 0, .6);
+}
+.lightbox .lb-close {
+  position: absolute; top: 18px; right: 22px; color: #fff; font-size: 1.4rem;
+  font-weight: 800; opacity: .8;
+}
+
+/* ---------- 토스트 ---------- */
+.toast {
+  position: fixed; left: 50%; bottom: 30px; transform: translate(-50%, 16px);
+  z-index: 110; background: var(--text); color: var(--bg);
+  padding: 11px 20px; border-radius: 999px; font-size: .88rem; font-weight: 600;
+  box-shadow: var(--shadow-lg); opacity: 0; pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease; max-width: 86vw; text-align: center;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+@media (max-width: 760px) {
+  .month-section > .month-head { padding: 11px 13px; }
+  .month-head h2 { font-size: 1.12rem; }
+  .month-body { padding-left: 0; }
+  .audio-brief { padding: 15px 16px; gap: 12px; }
+  .audio-brief .ab-icon { font-size: 1.6rem; }
+}

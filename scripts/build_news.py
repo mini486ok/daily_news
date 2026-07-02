@@ -102,6 +102,23 @@ def cmd_build(args):
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     log(f"manifest.json 갱신 완료 ({len(manifest['days'])}일치, {count}건)")
 
+    # 오디오북(NotebookLM 등) 소스 텍스트: 그날 기사 전체를 한 파일로 묶음.
+    # NotebookLM에 이 파일 하나를 소스로 올려 오디오 개요(Audio Overview)를 생성하고,
+    # 결과 파일을 days/<date>/audio.m4a 로 저장하면 상세 페이지에 플레이어가 자동 표시된다.
+    lines = [f"# {date} Daily News 브리핑",
+             "", f"{date}에 국내 언론에 보도된 AI(인공지능)·철도/대중교통 분야 주요 기사 요약입니다.", ""]
+    for t in data.get("topics", []):
+        lines += [f"## 주제: {t.get('label', t.get('key', ''))}", ""]
+        for a in t.get("articles", []):
+            s = a.get("summary", {}) or {}
+            lines += [f"### {a.get('rank')}. {a.get('title', '')} ({a.get('outlet', '')})", ""]
+            for label, key in (("핵심 내용", "core"), ("시사점", "implication"),
+                               ("더 생각해볼 문제", "questions"), ("추진 필요한 연구개발 주제", "rnd")):
+                if s.get(key):
+                    lines += [f"**{label}**: {s[key]}", ""]
+    (day_dir / "audio_source.md").write_text("\n".join(lines), encoding="utf-8")
+    log(f"오디오 소스 텍스트 생성 → {day_dir / 'audio_source.md'}")
+
 
 def cmd_date(args):
     """게시·검색 기준 날짜를 출력. 인자가 있으면 그대로, 없으면 어제(오늘 KST-1일)."""

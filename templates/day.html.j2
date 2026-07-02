@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ date }} · Daily News 브리핑</title>
   <meta name="description" content="{{ date }} 국내 언론 기준 AI·철도/대중교통 주요 뉴스 한글 요약" />
+  <!-- 공유 미리보기(카카오톡·SNS)용 Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Daily News" />
+  <meta property="og:title" content="{{ date }} 뉴스 브리핑 · Daily News" />
+  <meta property="og:description" content="{{ date }} 국내 언론 기준 AI·철도/대중교통 주요 뉴스 한글 요약·칠판 인포그래픽" />
+  <meta property="og:url" content="https://mini486ok.github.io/daily_news/days/{{ date }}/" />
+  {%- if topics and topics[0].articles and topics[0].articles[0].infographic %}
+  <meta property="og:image" content="https://mini486ok.github.io/daily_news/days/{{ date }}/{{ topics[0].articles[0].infographic.image_path }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  {%- endif %}
   <script>
     (function () {
       try {
@@ -16,7 +26,7 @@
   </script>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  <link rel="stylesheet" href="../../assets/css/style.css?v=20260617" />
+  <link rel="stylesheet" href="../../assets/css/style.css?v=20260702" />
   <!-- Google Analytics 4 (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMPTBBDMC4"></script>
   <script>
@@ -49,6 +59,9 @@
 
   <main>
     <div class="wrap">
+      <!-- 오디오 브리핑: days/<date>/audio.(m4a|mp3|wav) 가 존재하면 JS가 플레이어를 채움 -->
+      <div id="audioBrief"></div>
+
       {% for t in topics %}
       <section class="topic-section" id="topic-{{ t.key }}">
         <div class="topic-head"><span class="topic-badge t-{{ t.key }}">{{ t.label }}</span><span class="count">{{ t.articles|length }}건</span></div>
@@ -79,6 +92,8 @@
 
           <div class="links">
             {% if a.url %}<a class="btn primary" href="{{ a.url }}" target="_blank" rel="noopener">기사 원문 보기</a>{% endif %}
+            <button class="btn share-btn" type="button" title="인포그래픽·링크 공유">공유</button>
+            {% if a.infographic.image_path %}<a class="btn" href="{{ a.infographic.image_path }}" download="{{ date }}-{{ t.key }}-{{ '%02d'|format(a.rank) }}.png">인포그래픽 저장</a>{% endif %}
           </div>
         </article>
         {% endfor %}
@@ -93,6 +108,6 @@
     </div>
   </footer>
 
-  <script src="../../assets/js/main.js?v=20260617"></script>
+  <script src="../../assets/js/main.js?v=20260702"></script>
 </body>
 </html>

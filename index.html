@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily News — 국내 뉴스 요약 브리핑</title>
   <meta name="description" content="국내 언론 기준 AI(인공지능)·철도/대중교통 주요 뉴스를 매일 한글로 요약하고 칠판 인포그래픽으로 정리한 아카이브" />
+  <!-- 공유 미리보기(카카오톡·SNS)용 Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Daily News" />
+  <meta property="og:title" content="Daily News — 국내 뉴스 요약 브리핑" />
+  <meta property="og:description" content="국내 언론 기준 AI·철도/대중교통 주요 뉴스를 매일 한글로 요약하고 칠판 인포그래픽으로 정리한 아카이브" />
+  <meta property="og:url" content="https://mini486ok.github.io/daily_news/" />
   <script>
     (function () {
       try {
@@ -16,7 +22,7 @@
   </script>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260617" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20260702" />
   <!-- Google Analytics 4 (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMPTBBDMC4"></script>
   <script>
@@ -63,6 +69,10 @@
         <div class="chips" id="topicChips"></div>
       </div>
       <div class="filter-group">
+        <span class="filter-label">월</span>
+        <div class="chips" id="monthChips"></div>
+      </div>
+      <div class="filter-group">
         <span class="filter-label">날짜</span>
         <div class="chips datechips" id="dateChips"></div>
       </div>
@@ -82,6 +92,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20260617"></script>
+  <script src="assets/js/main.js?v=20260702"></script>
 </body>
 </html>
