@@ -106,7 +106,7 @@
   /* =======================================================================
      메인(아카이브) 페이지 — 월 → 날짜 2단 구조
      ======================================================================= */
-  const state = { query: "", month: "all", date: "all", topic: "all", days: [], open: {}, openM: {} };
+  const state = { query: "", month: "all", date: "all", topic: "all", days: [], open: {}, openM: {}, audio: {} };
 
   function initIndex() {
     fetch("data/manifest.json", { cache: "no-store" })
@@ -374,6 +374,45 @@
     }
     app.innerHTML = html || '<div class="empty">조건에 맞는 기사가 없습니다.</div>';
     wireToggles(app);
+    injectDayAudio(app);
+  }
+
+  // 메인 페이지: 펼쳐진 날짜 섹션에 그 날짜의 오디오북(있을 때만) 플레이어 주입
+  function dayAudioUrl(date) {
+    if (date in state.audio) return Promise.resolve(state.audio[date]);
+    const candidates = ["m4a", "mp3", "wav"].map((ext) => `days/${date}/daily-news-${date}.${ext}`);
+    state.audio[date] = null;
+    return (async () => {
+      for (const url of candidates) {
+        try {
+          const r = await fetch(url, { method: "HEAD", cache: "no-store" });
+          if (r.ok) { state.audio[date] = url; return url; }
+        } catch (e) { /* 다음 후보 */ }
+      }
+      return null;
+    })();
+  }
+  function injectDayAudio(app) {
+    app.querySelectorAll(".day-section:not(.collapsed)").forEach((sec) => {
+      const date = sec.getAttribute("data-date");
+      const body = sec.querySelector(".day-body");
+      if (!date || !body || body.querySelector(".audio-brief")) return;
+      dayAudioUrl(date).then((url) => {
+        if (!url || body.querySelector(".audio-brief")) return;
+        const name = url.split("/").pop();
+        const el = document.createElement("div");
+        el.innerHTML = `
+          <div class="audio-brief compact">
+            <div class="ab-icon">🎧</div>
+            <div class="ab-body">
+              <div class="ab-title">오디오 브리핑 <span class="ab-date">${esc(date)}</span></div>
+              <audio controls preload="none" src="${url}"></audio>
+            </div>
+            <a class="btn ab-down" href="${url}" download="${esc(name)}">⬇ 저장</a>
+          </div>`;
+        body.insertBefore(el.firstElementChild, body.firstChild);
+      });
+    });
   }
 
   function wireToggles(app) {
@@ -384,6 +423,7 @@
         const dt = sec.getAttribute("data-date");
         const nowCollapsed = sec.classList.toggle("collapsed");
         state.open[dt] = !nowCollapsed;
+        if (!nowCollapsed) injectDayAudio(sec.parentElement || sec);
       };
       head.addEventListener("click", toggle);
       head.addEventListener("keydown", (e) => {
@@ -396,6 +436,7 @@
         const m = sec.getAttribute("data-month");
         const nowCollapsed = sec.classList.toggle("collapsed");
         state.openM[m] = !nowCollapsed;
+        if (!nowCollapsed) injectDayAudio(sec);
       };
       head.addEventListener("click", toggle);
       head.addEventListener("keydown", (e) => {

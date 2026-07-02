@@ -26,6 +26,7 @@ DATE 당일 중요 기사가 10건 미만이면 억지로 채우지 말고 **확
 각 기사에 대해 아래 JSON 요소를 채워 한 파일에 배열로 저장하라." 라고 지시합니다.
 - 각 기사 필드(한글):
   - `title`: 기사 제목, `outlet`: 언론사, `url`: 기사 URL, `published`: **게재일(반드시 DATE와 동일, YYYY-MM-DD) — WebFetch로 확인한 값**
+  - `excerpt`: **원문 발췌** — WebFetch로 게재일을 확인할 때 그 본문에서 **도입부(리드) 2~3문단을 원문 그대로 인용**(300~700자 내외). 요약·의역 금지, 광고·기자 서명·저작권 문구 제외. (오디오북 생성 시 사실 근거로 사용되므로 반드시 채울 것)
   - `summary_line`: **핵심 내용 1문장(서술식, '~했다/~이다' 등으로 끝나는 완전한 문장)** — 메인 카드에 표시
   - `summary.core`: 핵심 내용 2~4문장
   - `summary.implication`: 시사점 2~3문장
@@ -37,7 +38,7 @@ DATE 당일 중요 기사가 10건 미만이면 억지로 채우지 말고 **확
 {
  "date": "DATE",
  "topics": [
-   {"key": "ai", "label": "AI(인공지능)", "articles": [ {rank,title,outlet,url,summary_line,summary{core,implication,questions,rnd}}, ... 10개 ]},
+   {"key": "ai", "label": "AI(인공지능)", "articles": [ {rank,title,outlet,url,published,excerpt,summary_line,summary{core,implication,questions,rnd}}, ... 10개 ]},
    {"key": "transit", "label": "철도·대중교통", "articles": [ ... 10개 ]}
  ]
 }

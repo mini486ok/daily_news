@@ -112,6 +112,9 @@ def cmd_build(args):
         for a in t.get("articles", []):
             s = a.get("summary", {}) or {}
             lines += [f"### {a.get('rank')}. {a.get('title', '')} ({a.get('outlet', '')})", ""]
+            # 원문 발췌(수집 시 WebFetch로 확인한 본문 리드 단락) — 오디오의 사실 근거 강화
+            if a.get("excerpt"):
+                lines += [f"**원문 발췌**: {a['excerpt']}", ""]
             for label, key in (("핵심 내용", "core"), ("시사점", "implication"),
                                ("더 생각해볼 문제", "questions"), ("추진 필요한 연구개발 주제", "rnd")):
                 if s.get(key):
@@ -133,6 +136,20 @@ def cmd_build(args):
     )
     (day_dir / "audio_prompt.txt").write_text(prompt, encoding="utf-8")
     log(f"오디오 프롬프트 생성 → {day_dir / 'audio_prompt.txt'}")
+
+    # 오디오북 보존 정책: 용량 관리를 위해 최근 10일치만 사이트에 제공(초과분 파일 삭제).
+    AUDIO_KEEP_DAYS = 10
+    audio_exts = {".m4a", ".mp3", ".wav"}
+    audio_days = []
+    for d in sorted((p for p in DAYS_DIR.iterdir() if p.is_dir()), key=lambda p: p.name, reverse=True):
+        files = [p for p in d.iterdir()
+                 if p.suffix.lower() in audio_exts and (p.name.startswith("daily-news-") or p.stem == "audio")]
+        if files:
+            audio_days.append((d.name, files))
+    for dname, files in audio_days[AUDIO_KEEP_DAYS:]:
+        for p in files:
+            p.unlink()
+            log(f"오디오 보존기간(최근 {AUDIO_KEEP_DAYS}일) 초과 삭제 → days/{dname}/{p.name}")
 
 
 def cmd_date(args):

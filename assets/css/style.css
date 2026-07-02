@@ -360,6 +360,12 @@ main { padding: 28px 0 80px; }
 .audio-brief .ab-desc { color: var(--text-soft); font-size: .86rem; margin: 2px 0 10px; }
 .audio-brief audio { width: 100%; max-width: 560px; height: 40px; }
 .audio-brief .ab-down { flex: none; }
+/* 메인 페이지용 컴팩트 오디오 카드 */
+.audio-brief.compact { padding: 14px 18px; margin: 0 0 18px; gap: 14px; }
+.audio-brief.compact .ab-icon { font-size: 1.5rem; }
+.audio-brief.compact .ab-title { font-size: .95rem; }
+.audio-brief .ab-date { color: var(--text-mute); font-weight: 600; font-size: .82rem; margin-left: 6px; }
+.audio-brief.compact audio { height: 36px; margin-top: 6px; }
 
 /* ---------- 라이트박스(인포그래픽 확대) ---------- */
 .lightbox {
