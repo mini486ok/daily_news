@@ -60,11 +60,26 @@ python scripts/build_news.py build DATE
 ```
 - `days/DATE/index.html` 생성 + `data/manifest.json` 에 해당 날짜 **추가**(메인 `index.html` 은 수정하지 않음).
 
-### 6단계 · 배포 (스크립트)
+### 6단계 · 오디오북 생성 (NotebookLM, 스크립트 전용)
+5단계 build가 만든 `days/DATE/audio_source.md`(기사 전체+원문 발췌)와 `days/DATE/audio_prompt.txt`(2부 구성 지시)로 그날의 한국어 오디오북을 생성합니다.
+
+**반드시 아래 스크립트만 사용하고, `mcp__notebooklm-mcp__*` MCP 도구는 절대 호출하지 마세요** (MCP 서버의 브라우저가 Chrome 프로필을 잠가 스크립트와 충돌합니다).
+
+```
+node scripts/nblm_create_notebook.js "Daily News DATE"        # ① 노트북 생성 → 마지막 줄 JSON의 url 사용
+node scripts/nblm_add_source.js <url> days/DATE/audio_source.md   # ② 소스 추가(sourcesAfter≥1 확인)
+node scripts/nblm_generate_audio.js <url> days/DATE/audio_prompt.txt  # ③ 생성 트리거(started 확인)
+node scripts/nblm_download_audio.js <url> "<저장소절대경로>/days/DATE/daily-news-DATE.m4a" 30  # ④ 완성 대기(최대 30분)+저장
+```
+- 각 스크립트는 **마지막 줄에 JSON**(`{"ok":true,...}`)을 출력합니다. `ok:false`면 그 스크립트만 1회 재시도하고, 그래도 실패하면 **오디오 단계를 포기하고 7단계로 진행**합니다(사이트는 오디오 없이도 정상 게시되며, 페이지에 파일이 있을 때만 플레이어가 표시됨). 실패 사실과 오류 메시지는 최종 보고에 포함하세요.
+- 성공 시 `days/DATE/daily-news-DATE.m4a` 파일 존재(수십 MB)를 확인합니다. 오디오 보존은 최근 10일치만(빌드가 자동 정리).
+
+### 7단계 · 배포 (스크립트)
 ```
 python scripts/build_news.py deploy DATE
 ```
-- 완료 후 처리 건수·배포 URL(`https://mini486ok.github.io/daily_news/`)을 보고합니다(반영까지 약 1분).
+- 오디오 파일(m4a)도 함께 커밋·푸시됩니다.
+- 완료 후 처리 건수·오디오 생성 성공 여부·배포 URL(`https://mini486ok.github.io/daily_news/`)을 보고합니다(반영까지 약 1분).
 
 ---
 

@@ -13,6 +13,9 @@ try { $OutputEncoding = [Console]::OutputEncoding = New-Object System.Text.UTF8E
 $Claude = 'C:\Users\mini4\.local\bin\claude.exe'
 $LogDir = 'C:\Users\mini4\daily_news_auto\logs'
 
+# node (portable) on PATH: the /daily-news audiobook step runs scripts/nblm_*.js via node.
+$env:Path = 'C:\Users\mini4\nodejs;' + $env:Path
+
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
 $stamp = (Get-Date).ToString('yyyy-MM-dd_HHmmss')
 $log   = Join-Path $LogDir "daily-news_$stamp.log"

@@ -13,10 +13,11 @@
 ```
 /daily-news [YYYY-MM-DD]
    ├─ ① 날짜 확정
-   ├─ ② 기사 수집·요약 : 주제별(AI / 철도·대중교통) 국내 언론 기사 10건씩 검색·요약 → days/<date>/articles.json
+   ├─ ② 기사 수집·요약 : 주제별(AI / 철도·대중교통) 국내 언론 기사 10건씩 검색·요약(+원문 발췌) → days/<date>/articles.json
    ├─ ③ 인포그래픽     : 기사별 칠판형 인포그래픽(제목·언론사·핵심내용·시사점·더 생각해볼 문제·R&D)
-   ├─ ④ build         : 일자별 페이지 + manifest.json 갱신(추가만)
-   └─ ⑤ deploy        : git push → GitHub Pages 자동 배포
+   ├─ ④ build         : 일자별 페이지 + manifest.json 갱신 + 오디오 소스/프롬프트 생성(+10일 초과 오디오 정리)
+   ├─ ⑤ 오디오북       : NotebookLM 자동화(노트북 생성→소스 추가→한국어 2부 구성 생성→다운로드) → daily-news-<date>.m4a
+   └─ ⑥ deploy        : git push → GitHub Pages 자동 배포(오디오 포함)
 ```
 
 ## 구성
