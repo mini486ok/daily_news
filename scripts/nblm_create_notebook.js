@@ -2,17 +2,20 @@
  * NotebookLM 새 노트북 생성 + 이름 지정 스크립트.
  *
  * 사용법:
- *   node scripts/nblm_create_notebook.js "<노트북 제목>"
+ *   node scripts/nblm_create_notebook.js "<노트북 제목>" [urlOutFile]
  * 출력(마지막 줄 JSON): {"ok":true,"url":"https://notebooklm.google.com/notebook/<uuid>","uuid":"..."}
+ * urlOutFile 을 주면 생성된 URL을 그 파일에도 기록한다(러너의 오디오 다운로드 폴백용).
  *
  * notebooklm-mcp v2.0.0에는 노트북 생성 도구가 없어 UI 자동화로 생성한다(2026-07-02 실증 절차).
  * 생성 직후 빈 노트북은 소스 추가 모달이 자동으로 열리므로 닫은 뒤 제목을 입력한다.
  * MCP 서버(및 그 브라우저 세션)가 실행 중이지 않을 때 돌릴 것(프로필 잠금 충돌 방지).
  */
+const fs = require("fs");
 const path = require("path");
 const { chromium } = require(String.raw`C:\Users\mini4\nodejs\node_modules\notebooklm-mcp\node_modules\patchright`);
 
 const TITLE = process.argv[2];
+const URL_OUT = process.argv[3];
 if (!TITLE) {
   console.log(JSON.stringify({ ok: false, error: 'usage: node nblm_create_notebook.js "<title>"' }));
   process.exit(1);
@@ -59,6 +62,7 @@ const UUID_RE = /notebook\/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f
     if (!uuid) throw new Error("notebook uuid not resolved. url=" + page.url());
     const url = "https://notebooklm.google.com/notebook/" + uuid;
     console.error("created: " + url);
+    if (URL_OUT) { try { fs.writeFileSync(URL_OUT, url + "\n", "utf-8"); } catch (e) { console.error("url out write failed: " + e.message); } }
     await page.waitForTimeout(3000);
 
     // 3) 자동으로 열린 소스 추가 모달 닫기(제목 입력을 위해)

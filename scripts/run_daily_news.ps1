@@ -65,12 +65,36 @@ try { $before = (& git rev-parse HEAD 2>$null | Select-Object -Last 1) } catch {
     Tee-Object -FilePath $log -Append
 $code = $LASTEXITCODE
 
-$after = ''
-try { $after = (& git rev-parse HEAD 2>$null | Select-Object -Last 1) } catch {}
+# ---- Deterministic fallbacks (the agent flaked twice on these steps) ----
+$dayIndex = Join-Path $Repo ("days\{0}\index.html" -f $date)
+$m4aFile  = Join-Path $Repo ("days\{0}\daily-news-{0}.m4a" -f $date)
+$nbFile   = Join-Path $Repo ("days\{0}\notebook_url.txt" -f $date)
 
-if (Test-Path -LiteralPath (Join-Path $Repo ("days\{0}\index.html" -f $date))) {
-    if ($after -and ($before -ne $after)) { W ("OK: published {0}, new commit {1}" -f $date, $after) }
-    else { W ("WARN: days/{0} built but no new commit -- push may have failed" -f $date) }
+if (Test-Path -LiteralPath $dayIndex) {
+    # Fallback 1: audio missing but notebook URL known -> download it ourselves (waits up to 30 min)
+    if (-not (Test-Path -LiteralPath $m4aFile) -and (Test-Path -LiteralPath $nbFile)) {
+        $nb = (Get-Content -LiteralPath $nbFile -TotalCount 1).Trim()
+        if ($nb) {
+            W ("fallback: audio missing -- downloading from " + $nb)
+            & node (Join-Path $Repo 'scripts\nblm_download_audio.js') $nb $m4aFile 30 *>&1 |
+                Tee-Object -FilePath $log -Append
+        }
+    }
+    # Fallback 2: uncommitted work or no new commit -> deploy ourselves
+    $after = ''
+    try { $after = (& git rev-parse HEAD 2>$null | Select-Object -Last 1) } catch {}
+    $dirty = 0
+    try { $dirty = (& git status --porcelain 2>$null | Measure-Object).Count } catch {}
+    if (($dirty -gt 0) -or ($before -eq $after)) {
+        W ("fallback: deploying (dirty={0}, newCommit={1})" -f $dirty, ($before -ne $after))
+        & git add -A *>&1 | Out-Null
+        & git commit -m ("news {0}" -f $date) *>&1 | Tee-Object -FilePath $log -Append
+        & git push origin main *>&1 | Tee-Object -FilePath $log -Append
+    }
+    $final = ''
+    try { $final = (& git rev-parse HEAD 2>$null | Select-Object -Last 1) } catch {}
+    if ($final -and ($before -ne $final)) { W ("OK: published {0}, commit {1}" -f $date, $final) }
+    else { W ("WARN: still no new commit for {0} -- check log" -f $date) }
 } else {
     W ("WARN: claude exited {0} but days/{1} not created (0 articles, or it stopped to ask)" -f $code, $date)
 }

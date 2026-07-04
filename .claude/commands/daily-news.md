@@ -66,7 +66,7 @@ python scripts/build_news.py build DATE
 **반드시 아래 스크립트만 사용하고, `mcp__notebooklm-mcp__*` MCP 도구는 절대 호출하지 마세요** (MCP 서버의 브라우저가 Chrome 프로필을 잠가 스크립트와 충돌합니다).
 
 ```
-node scripts/nblm_create_notebook.js "Daily News DATE"        # ① 노트북 생성 → 마지막 줄 JSON의 url 사용
+node scripts/nblm_create_notebook.js "Daily News DATE" days/DATE/notebook_url.txt   # ① 노트북 생성 → 마지막 줄 JSON의 url 사용(파일에도 기록: 러너 폴백용)
 node scripts/nblm_add_source.js <url> days/DATE/audio_source.md   # ② 소스 추가(sourcesAfter≥1 확인)
 node scripts/nblm_generate_audio.js <url> days/DATE/audio_prompt.txt  # ③ 생성 트리거(started 확인)
 node scripts/nblm_download_audio.js <url> "<저장소절대경로>/days/DATE/daily-news-DATE.m4a" 30  # ④ 완성 대기(최대 30분)+저장
