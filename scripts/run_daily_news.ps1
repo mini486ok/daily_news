@@ -61,9 +61,19 @@ if (Test-Path -LiteralPath (Join-Path $Repo ("days\{0}\index.html" -f $date))) {
 $before = ''
 try { $before = (& git rev-parse HEAD 2>$null | Select-Object -Last 1) } catch {}
 
-& $Claude -p "/daily-news" --dangerously-skip-permissions --verbose *>&1 |
-    Tee-Object -FilePath $log -Append
-$code = $LASTEXITCODE
+# Run headless pipeline; retry once on transient failure with no output
+# (e.g. "API Error: Server error mid-response" killed the run on 2026-07-08).
+$dayIndexEarly = Join-Path $Repo ("days\{0}\index.html" -f $date)
+$code = 1
+for ($attempt = 1; $attempt -le 2; $attempt++) {
+    W ("claude attempt {0}" -f $attempt)
+    & $Claude -p "/daily-news" --dangerously-skip-permissions --verbose *>&1 |
+        Tee-Object -FilePath $log -Append
+    $code = $LASTEXITCODE
+    if (($code -eq 0) -or (Test-Path -LiteralPath $dayIndexEarly)) { break }
+    W ("claude failed (exit {0}) with no page built -- retrying in 120 s" -f $code)
+    Start-Sleep -Seconds 120
+}
 
 # ---- Deterministic fallbacks (the agent flaked twice on these steps) ----
 $dayIndex = Join-Path $Repo ("days\{0}\index.html" -f $date)
