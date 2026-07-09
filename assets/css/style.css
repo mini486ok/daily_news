@@ -269,6 +269,7 @@ main { padding: 28px 0 80px; }
 .site-footer { border-top: 1px solid var(--border); padding: 32px 0; color: var(--text-mute);
   font-size: .85rem; text-align: center; }
 .site-footer a { color: var(--accent); font-weight: 600; }
+.site-footer .footnote { font-size: .76rem; opacity: .8; }
 
 /* ---------- 반응형 ---------- */
 @media (max-width: 760px) {
