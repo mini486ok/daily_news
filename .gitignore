@@ -18,3 +18,11 @@ days/*/img/_hero_*.png
 
 # 도구/서브에이전트 임시 스크래치 파일
 _*.txt
+
+# 저작권·정보노출 방지: 기사 원문 발췌가 담긴 파이프라인 내부 산출물은 게시하지 않음
+# (사이트 동작에는 manifest.json + days/*/index.html + img + m4a 만 필요.
+#  아래 파일들은 로컬에만 유지 — build·오디오 스크립트·러너 폴백이 로컬에서 읽음)
+days/*/articles.json
+days/*/audio_source.md
+days/*/audio_prompt.txt
+days/*/notebook_url.txt
