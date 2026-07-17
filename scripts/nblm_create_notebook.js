@@ -38,6 +38,17 @@ const UUID_RE = /notebook\/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f
     await page.waitForTimeout(5000);
     if (/accounts\.google\.com/.test(page.url())) throw new Error("redirected to login");
 
+    // 0) 홈 진입 직후 뜨는 공지/프로모션 오버레이 닫기(2026-07-18 '새로 만들기' 클릭 차단 사례)
+    for (let round = 0; round < 4; round++) {
+      const overlay = await page.locator(".cdk-overlay-backdrop-showing").first().isVisible({ timeout: 800 }).catch(() => false);
+      if (!overlay) break;
+      await page.keyboard.press("Escape").catch(() => {});
+      await page.waitForTimeout(1200);
+      const still = await page.locator(".cdk-overlay-backdrop-showing").first().isVisible({ timeout: 500 }).catch(() => false);
+      if (still) await page.locator(".cdk-overlay-backdrop-showing").first().click({ position: { x: 10, y: 10 } }).catch(() => {});
+      await page.waitForTimeout(800);
+    }
+
     // 1) "새로 만들기"/"노트북 만들기" 클릭
     const createSel = [
       'button:has-text("새로 만들기")',
