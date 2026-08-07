@@ -43,7 +43,8 @@ const PROMPT = fs.readFileSync(PROMPT_FILE, "utf-8").trim();
       throw new Error("audio artifact already exists — run nblm_delete_audio.js first");
     }
 
-    // 1) "AI 오디오 오버뷰 맞춤설정" 버튼
+    // 1) "AI 오디오 오버뷰 맞춤설정" 버튼(구 UI) → 없으면 스튜디오 "AI 오디오 오버뷰" 타일(2026-08 개편 UI,
+    //    클릭 시 동일한 맞춤설정 대화상자가 열림)
     const customizeSel = [
       'button[aria-label*="오디오 오버뷰 맞춤설정"]',
       'button[aria-label*="오디오"][aria-label*="맞춤설정"]',
@@ -54,6 +55,14 @@ const PROMPT = fs.readFileSync(PROMPT_FILE, "utf-8").trim();
     for (const sel of customizeSel) {
       const b = page.locator(sel).first();
       if (await b.isVisible({ timeout: 2000 }).catch(() => false)) { await b.click(); opened = true; break; }
+    }
+    if (!opened) {
+      const tile = page.locator('.studio-panel :text("AI 오디오 오버뷰"), .studio-panel :text("Audio Overview")').first();
+      if (await tile.isVisible({ timeout: 3000 }).catch(() => false)) {
+        await tile.click();
+        opened = true;
+        console.error("clicked studio tile: AI 오디오 오버뷰");
+      }
     }
     if (!opened) throw new Error("audio customize button not found");
     await page.waitForTimeout(2000);
@@ -93,7 +102,7 @@ const PROMPT = fs.readFileSync(PROMPT_FILE, "utf-8").trim();
       await page.waitForTimeout(3000);
       const tile = await page.locator("artifact-library-item").first().isVisible({ timeout: 500 }).catch(() => false);
       const studioText = await page.locator(".studio-panel").first().textContent({ timeout: 500 }).catch(() => "");
-      if (tile || /생성 중|잠시 후 다시/.test(studioText || "")) { started = true; break; }
+      if (tile || /생성 중|만드는 중|잠시 후 다시|로드 중/.test(studioText || "")) { started = true; break; }
     }
     console.log(JSON.stringify({ ok: started, status: started ? "started" : "unknown" }));
     if (!started) process.exit(1);

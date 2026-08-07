@@ -57,6 +57,7 @@ const maxWaitMs = (parseInt(MAX_MIN, 10) || 30) * 60 * 1000;
     await page.waitForTimeout(1200);
     const dlSel = [
       '[role="menuitem"]:has(mat-icon:text-is("download"))',
+      '[role="menuitem"]:has(mat-icon:text-is("save_alt"))',
       '[role="menuitem"]:has-text("다운로드")',
       '[role="menuitem"]:has-text("Download")',
     ];
@@ -69,10 +70,15 @@ const maxWaitMs = (parseInt(MAX_MIN, 10) || 30) * 60 * 1000;
       const texts = await page.locator('[role="menuitem"]').allInnerTexts().catch(() => []);
       throw new Error("download menu item not found. items: " + JSON.stringify(texts).slice(0, 300));
     }
-    const [download] = await Promise.all([
-      page.waitForEvent("download", { timeout: 120000 }),
-      dlItem.click(),
-    ]);
+    // 2026-08 개편 UI: 다운로드가 새 탭에서 시작되므로 현재 페이지뿐 아니라
+    // 이후 열리는 모든 페이지에서 download 이벤트를 수신해야 한다.
+    const download = await new Promise((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error('download event timeout (180s, all pages)')), 180000);
+      const onDownload = (d) => { clearTimeout(timer); resolve(d); };
+      page.on("download", onDownload);
+      ctx.on("page", (p) => p.on("download", onDownload));
+      dlItem.click().catch((e) => { clearTimeout(timer); reject(e); });
+    });
     await download.saveAs(DEST_FILE);
     const fs = require("fs");
     const size = fs.statSync(DEST_FILE).size;
